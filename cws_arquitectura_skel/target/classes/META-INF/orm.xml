@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_2_0.xsd"
+	version="2.0">
+
+	<!-- Averia quieries -->
+	<named-query name="Averia.findByIds">
+		<query>
+			select a 
+			from Averia a 
+			where a.id in (?1)
+		</query>
+	</named-query>
+
+	<named-query name="Averia.findNoFacturadasByDni">
+		<query>
+			select a 
+			from Averia a 
+			where a.vehiculo.cliente.dni = ?1 
+			and a.status = uo.ri.model.types.status.AveriaStatus.TERMINADA 
+		</query>
+	</named-query>
+
+	<!-- MedioPago queries -->
+	<named-query name="MedioPago.findByInvoiceId">
+		<query>
+			select m 
+			from Factura f 
+				join f.averias a 
+				join a.vehiculo.cliente c 
+				join c.mediosPago m 
+			where f.id = ?1
+		</query>
+	</named-query>
+
+	<!-- Repuesto queries -->
+	<named-query name="Repuesto.findByCodigo">
+		<query>
+			select r
+			from Repuesto r 
+			where r.codigo = ?1
+		</query>
+	</named-query>
+
+	<named-query name="Repuesto.findIdByCodigo">
+		<query>
+			select r.id
+			from Repuesto r 
+			where r.codigo = ?1
+		</query>
+	</named-query>
+
+	<!-- Factura queries -->
+	<named-query name="Factura.findByNumber">
+		<query>
+			select f 
+			from Factura f 
+			where f.numero = ?1
+		</query>
+	</named-query>
+
+	<named-query name="Factura.getNextInvoiceNumber">
+		<query>
+			select max(f.numero) + 1 
+			from Factura f
+		</query>
+	</named-query>
+
+	<!-- Mecanico queries -->
+	<named-query name="Mecanico.findAll">
+		<query>
+			select m 
+			from Mecanico m
+		</query>
+	</named-query>
+
+	<!-- Provedor queries -->
+	<named-query name="Proveedor.findAll">
+		<query>
+			select p 
+			from Proveedor p
+		</query>
+	</named-query>
+
+	<named-query name="Proveedor.findIdByNombre">
+		<query>
+			select p.id 
+			from Proveedor p
+			where p.nombre = ?1
+		</query>
+	</named-query>
+
+	<named-query name="Proveedor.findIdByCodigo">
+		<query>
+			select p.id 
+			from Proveedor p
+			where p.codigo = ?1
+		</query>
+	</named-query>
+
+	<named-query name="Proveedor.findByCodigo">
+		<query>
+			select p
+			from Proveedor p 
+			where p.codigo = ?1
+		</query>
+	</named-query>
+
+	<!-- Pedido queries -->
+	<named-query name="Pedido.findAllProveedor">
+		<query>
+			select p 
+			from Pedido p
+			where p.proveedor.codigo = ?1
+			order by p.estado, p.fecha_creacion DESC
+		</query>
+	</named-query>
+
+	<named-query name="Pedido.findByCodigo">
+		<query>
+			select p.id 
+			from Pedido p
+			where p.codigo = ?1
+			order by p.estado, p.fecha_creacion DESC
+		</query>
+	</named-query>
+
+	<!-- Suministro queries -->
+	<named-query name="Suministro.findAll">
+		<query>
+			select s
+			from Suministro s
+		</query>
+	</named-query>
+
+	<named-query name="Suministro.findByProveedor">
+		<query>
+			select s
+			from Suministro s
+				join s.proveedor p
+			where p.codigo = ?1
+		</query>
+	</named-query>
+
+	<named-query name="Suministro.findByRepuesto">
+		<query>
+			select s
+			from Suministro s
+				join s.repuesto r
+			where r.codigo = ?1
+		</query>
+	</named-query>
+
+</entity-mappings>
