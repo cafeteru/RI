@@ -23,7 +23,6 @@ public class Jpa {
 		EntityManager entityManager = getEmf().createEntityManager();
 		emThread.set(entityManager);
 		return entityManager;
-
 	}
 
 	public static EntityManager getManager() {

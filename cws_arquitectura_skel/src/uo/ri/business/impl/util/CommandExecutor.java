@@ -25,8 +25,8 @@ public class CommandExecutor {
 	 *             Excepción ocurrida durante la ejecución.
 	 */
 	public Object execute(Command cmd) throws BusinessException {
-		EntityManager mapper = Jpa.createEntityManager();
-		EntityTransaction trx = mapper.getTransaction();
+		EntityManager em = Jpa.createEntityManager();
+		EntityTransaction trx = em.getTransaction();
 		trx.begin();
 		try {
 			Object res = cmd.execute();
@@ -37,8 +37,8 @@ public class CommandExecutor {
 				trx.rollback();
 			throw e;
 		} finally {
-			if (mapper.isOpen())
-				mapper.close();
+			if (em.isOpen())
+				em.close();
 		}
 	}
 }
