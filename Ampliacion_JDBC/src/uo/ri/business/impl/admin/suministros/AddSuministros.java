@@ -10,7 +10,7 @@ import uo.ri.conf.PersistencieFactory;
  * Clase de la parte de l�gica encargada de a�adir un repuesto suministrado por
  * un proveedor.
  * 
- * @author Iv�n Gonz�lez Mahagamage
+ * @author Iván González Mahagamage
  *
  */
 public class AddSuministros implements Command {
@@ -18,7 +18,7 @@ public class AddSuministros implements Command {
 	Double precio;
 
 	/**
-	 * Constructor con par�metros.
+	 * Constructor con parámetros.
 	 * 
 	 * @param idRepuesto
 	 *            ID del repuesto.

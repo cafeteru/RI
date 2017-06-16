@@ -11,7 +11,7 @@ import uo.ri.common.BusinessException;
 /**
  * Clase de la parte logica que implementa a la clase CashService.
  * 
- * @author Iv·n Gonz·lez Mahagamage
+ * @author Iv√°n Gonz√°lez Mahagamage
  *
  */
 public class CashServiceImpl implements CashService {

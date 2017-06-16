@@ -7,17 +7,17 @@ import uo.ri.common.BusinessException;
 import uo.ri.conf.PersistencieFactory;
 
 /**
- * Clase de la parte de lógica encargada de actualizar la fecha de recepción y
+ * Clase de la parte de lï¿½gica encargada de actualizar la fecha de recepciï¿½n y
  * el estado de un pedido.
  * 
- * @author Iván González Mahagamage
+ * @author IvÃ¡n GonzÃ¡lez Mahagamage
  *
  */
 public class UpdateFechaRecepcionEstadoPedido implements Command {
 	Long idPedido;
 
 	/**
-	 * Constructor con parámetros.
+	 * Constructor con parÃ¡metros.
 	 * 
 	 * @param idPedido
 	 *            ID del pedido

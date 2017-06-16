@@ -7,80 +7,80 @@ import java.util.Map;
 import uo.ri.common.BusinessException;
 
 /**
- * Interfaz de la parte de lógica que declara los métodos que usa la clase
+ * Interfaz de la parte de lï¿½gica que declara los mÃ©todos que usa la clase
  * Admin.
  * 
- * @author Iván González Mahagamage
+ * @author IvÃ¡n GonzÃ¡lez Mahagamage
  *
  */
 public interface AdminService {
 	/**
-	 * Añade un mecánico.
+	 * Aï¿½ade un mecï¿½nico.
 	 * 
 	 * @param nombre
-	 *            Nombre del nuevo mecánico.
+	 *            Nombre del nuevo mecï¿½nico.
 	 * @param apellidos
-	 *            Apellidos del nuevo mecánico.
+	 *            Apellidos del nuevo mecï¿½nico.
 	 * @throws BusinessException
-	 *             Excepixión ocurrida al realizar el programa.
+	 *             Excepixiï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	void newMechanic(String nombre, String apellidos)
 			throws BusinessException, SQLException;
 
 	/**
-	 * Borra un mecánico.
+	 * Borra un mecï¿½nico.
 	 * 
 	 * @param idMecanico
-	 *            ID del mecánico.
+	 *            ID del mecï¿½nico.
 	 * @throws BusinessException
-	 *             Excepixión ocurrida al realizar el programa.
+	 *             Excepixiï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	void deleteMechanic(Long idMecanico) throws BusinessException, SQLException;
 
 	/**
-	 * Actualiza la información de mecánico.
+	 * Actualiza la informaciï¿½n de mecï¿½nico.
 	 * 
 	 * @param id
-	 *            ID del mecánico.
+	 *            ID del mecï¿½nico.
 	 * @param nombre
-	 *            Nombre del nuevo mecánico.
+	 *            Nombre del nuevo mecï¿½nico.
 	 * @param apellidos
-	 *            Apellidos del nuevo mecánico.
+	 *            Apellidos del nuevo mecï¿½nico.
 	 * @throws BusinessException
-	 *             Excepixión ocurrida al realizar el programa.
+	 *             Excepixiï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	void updateMechanic(Long id, String nombre, String apellidos)
 			throws BusinessException, SQLException;
 
 	/**
-	 * Lista a todos los mecánicos.
+	 * Lista a todos los mecï¿½nicos.
 	 * 
-	 * @return Un lista con todos los mecánicos.
+	 * @return Un lista con todos los mecï¿½nicos.
 	 * @throws BusinessException
-	 *             Excepixión ocurrida al realizar el programa.
+	 *             Excepixiï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	List<Map<String, Object>> findAllMechanics()
 			throws BusinessException, SQLException;
 
 	/**
-	 * Añade un proveedor.
+	 * Aï¿½ade un proveedor.
 	 * 
 	 * @param nombre
 	 *            Nombre del proveedor.
 	 * @param codigo
 	 *            Codigo del proveedor.
 	 * @throws BusinessException
-	 *             Excepixión ocurrida al realizar el programa.
+	 *             Excepixiï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	void newProveedor(String nombre, String codigo)
 			throws BusinessException, SQLException;
@@ -91,15 +91,15 @@ public interface AdminService {
 	 * @param idProveedor
 	 *            ID del proveedor.
 	 * @throws BusinessException
-	 *             Excepixión ocurrida al realizar el programa.
+	 *             Excepixiï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	void deleteProveedor(Long idProveedor)
 			throws BusinessException, SQLException;
 
 	/**
-	 * Actualiza la información de un proveedor sabiendo su ID.
+	 * Actualiza la informaciï¿½n de un proveedor sabiendo su ID.
 	 * 
 	 * @param idProveedor
 	 *            ID del proveedor.
@@ -108,15 +108,15 @@ public interface AdminService {
 	 * @param codigo
 	 *            Codigo del proveedor.
 	 * @throws BusinessException
-	 *             Excepixión ocurrida al realizar el programa.
+	 *             Excepixiï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	void updateProveedor(Long idProveedor, String nombre, String codigo)
 			throws BusinessException, SQLException;
 
 	/**
-	 * Actualiza la información de un proveedor sabiendo su nombre.
+	 * Actualiza la informaciï¿½n de un proveedor sabiendo su nombre.
 	 * 
 	 * @param nombre
 	 *            Nombre del proveedor.
@@ -125,9 +125,9 @@ public interface AdminService {
 	 * @param codigo
 	 *            Codigo del proveedor.
 	 * @throws BusinessException
-	 *             Excepixión ocurrida al realizar el programa.
+	 *             Excepixiï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	void updateProveedorSinID(String nombre, String nombreNuevo, String codigo)
 			throws BusinessException, SQLException;
@@ -137,15 +137,15 @@ public interface AdminService {
 	 * 
 	 * @return Una lista con todos los proveedores.
 	 * @throws BusinessException
-	 *             Excepixión ocurrida al realizar el programa.
+	 *             Excepixiï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	List<Map<String, Object>> findAllProveedores()
 			throws BusinessException, SQLException;
 
 	/**
-	 * Añade un nuevo respuesto suministrado por un proveedor.
+	 * Aï¿½ade un nuevo respuesto suministrado por un proveedor.
 	 * 
 	 * @param idRepuesto
 	 *            Id del repuesto.
@@ -154,9 +154,9 @@ public interface AdminService {
 	 * @param precio
 	 *            Precio del repuesto.
 	 * @throws BusinessException
-	 *             Excepixión ocurrida al realizar el programa.
+	 *             Excepixiï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	void newSuministro(Long idRepuesto, Long idProveedor, Double precio)
 			throws BusinessException, SQLException;
@@ -169,15 +169,15 @@ public interface AdminService {
 	 * @param idProveedor
 	 *            ID del proveedor.
 	 * @throws BusinessException
-	 *             Excepixión ocurrida al realizar el programa.
+	 *             Excepixiï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	void deleteSuministro(Long idRepuesto, Long idProveedor)
 			throws BusinessException, SQLException;
 
 	/**
-	 * Actualiza la información de un respuesto suministrado por un proveedor.
+	 * Actualiza la informaciï¿½n de un respuesto suministrado por un proveedor.
 	 * 
 	 * @param idRepuesto
 	 *            Id del repuesto.
@@ -186,9 +186,9 @@ public interface AdminService {
 	 * @param precio
 	 *            Precio del repuesto.
 	 * @throws BusinessException
-	 *             Excepixión ocurrida al realizar el programa.
+	 *             Excepixiï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	void updateSuministro(Long idRepuesto, Long idProveedor, Double precio)
 			throws BusinessException, SQLException;
@@ -200,9 +200,9 @@ public interface AdminService {
 	 *            ID del proveedor.
 	 * @return Una lista con los repuestos suministrador por un proveedor.
 	 * @throws BusinessException
-	 *             Excepixión ocurrida al realizar el programa.
+	 *             Excepixiï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	List<Map<String, Object>> findAllSuministrosProveedor(Long idProveedor)
 			throws BusinessException, SQLException;
@@ -214,9 +214,9 @@ public interface AdminService {
 	 *            Id del repuesto.
 	 * @return Una lista con los proveedores que suministran un repuesto.
 	 * @throws BusinessException
-	 *             Excepixión ocurrida al realizar el programa.
+	 *             Excepixiï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	List<Map<String, Object>> findAllSuministrosRepuesto(Long idRepuesto)
 			throws BusinessException, SQLException;
@@ -229,22 +229,22 @@ public interface AdminService {
 	 * @param idPedido
 	 *            Id del pedido.
 	 * @throws BusinessException
-	 *             Excepixión ocurrida al realizar el programa.
+	 *             Excepixiï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	void updateRepuestosExistenciasPrecio(List<Map<String, Object>> repuestos,
 			Long idPedido) throws BusinessException, SQLException;
 
 	/**
-	 * Actualiza la fecha de recepción y el estado de un pedido.
+	 * Actualiza la fecha de recepciï¿½n y el estado de un pedido.
 	 * 
 	 * @param idPedido
 	 *            Id del pedido.
 	 * @throws BusinessException
-	 *             Excepixión ocurrida al realizar el programa.
+	 *             Excepixiï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	void updateFechaRecepcionEstadoPedido(Long idPedido)
 			throws BusinessException, SQLException;
@@ -256,9 +256,9 @@ public interface AdminService {
 	 *            Id del pedido.
 	 * @return Una lista de los repuesto que hay en un pedido.
 	 * @throws BusinessException
-	 *             Excepixión ocurrida al realizar el programa.
+	 *             Excepixiï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	List<Map<String, Object>> findRepuestosPedidoID(Long idPedido)
 			throws BusinessException, SQLException;
@@ -270,9 +270,9 @@ public interface AdminService {
 	 *            ID del proveedor.
 	 * @return Una lista con los pedidos realizados a un proveedor.
 	 * @throws BusinessException
-	 *             Excepixión ocurrida al realizar el programa.
+	 *             Excepixiï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	List<Map<String, Object>> findAllPedidosProveedor(Long idProveedor)
 			throws BusinessException, SQLException;

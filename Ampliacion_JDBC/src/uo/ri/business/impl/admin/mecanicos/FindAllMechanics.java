@@ -8,9 +8,9 @@ import uo.ri.common.BusinessException;
 import uo.ri.conf.PersistencieFactory;
 
 /**
- * Clase de la parte de lógica encargada de listar a los mecánicos.
+ * Clase de la parte de lï¿½gica encargada de listar a los mecï¿½nicos.
  * 
- * @author Iván González Mahagamage
+ * @author IvÃ¡n GonzÃ¡lez Mahagamage
  *
  */
 public class FindAllMechanics implements CommandList {

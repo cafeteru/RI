@@ -10,7 +10,7 @@ import uo.ri.persistence.MecanicosGateway;
 /**
  * Clase de la parte de persistencia que implementa a la clase MecanicosGateway.
  * 
- * @author Iv�n Gonz�lez Mahagamage
+ * @author Iván González Mahagamage
  *
  */
 public class MecanicosGatewayImpl extends ConexionGateway implements MecanicosGateway {

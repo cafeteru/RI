@@ -14,7 +14,7 @@ import uo.ri.common.BusinessException;
  */
 public interface PedidosGateway {
 	/**
-	 * M�todo que se encarga de conectarse a la base de datos.
+	 * Método que se encarga de conectarse a la base de datos.
 	 * 
 	 * @throws BusinessException
 	 *             Excepci�n ocurrida al realizar el programa.
@@ -22,7 +22,7 @@ public interface PedidosGateway {
 	void setConnection() throws BusinessException;
 
 	/**
-	 * M�todo que lista todos los pedidos que hay en la base de datos realizados
+	 * Método que lista todos los pedidos que hay en la base de datos realizados
 	 * a un proveedor.
 	 * 
 	 * @param idProveedor
@@ -35,7 +35,7 @@ public interface PedidosGateway {
 			throws BusinessException;
 
 	/**
-	 * M�todo que lista todos los repuestos que hay en un pedido en la base de
+	 * Método que lista todos los repuestos que hay en un pedido en la base de
 	 * datos.
 	 * 
 	 * @param idPedido
@@ -48,7 +48,7 @@ public interface PedidosGateway {
 			throws BusinessException;
 
 	/**
-	 * M�todo que modifica las existencias y el precio de un repuesto en la base
+	 * Método que modifica las existencias y el precio de un repuesto en la base
 	 * de datos.
 	 * 
 	 * @param idRepuesto
@@ -62,7 +62,7 @@ public interface PedidosGateway {
 			throws BusinessException;
 
 	/**
-	 * M�todo que la fecha de recepci�n y el estado de un pedido en la base de
+	 * Método que la fecha de recepci�n y el estado de un pedido en la base de
 	 * datos.
 	 * 
 	 * @param idPedido

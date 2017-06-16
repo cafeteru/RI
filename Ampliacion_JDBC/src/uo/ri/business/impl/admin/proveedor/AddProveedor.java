@@ -9,14 +9,14 @@ import uo.ri.conf.PersistencieFactory;
 /**
  * Clase de la parte de l�gica encargada de a�adir un nuevo proveedor.
  * 
- * @author Iv�n Gonz�lez Mahagamage
+ * @author Iván González Mahagamage
  *
  */
 public class AddProveedor implements Command {
 	String nombre, codigo;
 
 	/**
-	 * Constructor con par�metros.
+	 * Constructor con parámetros.
 	 * 
 	 * @param nombre
 	 *            Nombre del proveedor.

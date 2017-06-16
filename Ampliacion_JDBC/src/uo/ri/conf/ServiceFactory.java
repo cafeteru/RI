@@ -5,26 +5,26 @@ import uo.ri.business.impl.*;
 
 /**
  * Clase que genera las clase de tipo Service (Se encarga de la parte de
- * lógica).
+ * lï¿½gica).
  * 
- * @author Iván González Mahagamage
+ * @author IvÃ¡n GonzÃ¡lez Mahagamage
  *
  */
 public class ServiceFactory {
 
 	/**
-	 * Crea un objeto que maneja la parte de lógica de Admin.
+	 * Crea un objeto que maneja la parte de lï¿½gica de Admin.
 	 * 
-	 * @return Un objeto que maneja la parte de lógica de Admin.
+	 * @return Un objeto que maneja la parte de lï¿½gica de Admin.
 	 */
 	public static AdminService getAdminService() {
 		return new AdminServiceImpl();
 	}
 
 	/**
-	 * Crea un objeto que maneja la parte de lógica de Cash.
+	 * Crea un objeto que maneja la parte de lï¿½gica de Cash.
 	 * 
-	 * @return Un objeto que maneja la parte de lógica de Cash.
+	 * @return Un objeto que maneja la parte de lï¿½gica de Cash.
 	 */
 	public static CashService getCashService() {
 		return new CashServiceImpl();

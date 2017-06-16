@@ -15,7 +15,7 @@ import uo.ri.common.BusinessException;
 /**
  * Clase de la parte logica que implementa a la clase AdminService.
  * 
- * @author Iv·n Gonz·lez Mahagamage
+ * @author Iv√°n Gonz√°lez Mahagamage
  *
  */
 public class AdminServiceImpl implements AdminService {

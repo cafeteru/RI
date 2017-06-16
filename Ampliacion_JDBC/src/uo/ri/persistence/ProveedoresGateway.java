@@ -14,7 +14,7 @@ import uo.ri.common.BusinessException;
  */
 public interface ProveedoresGateway {
 	/**
-	 * M�todo que se encarga de conectarse a la base de datos.
+	 * Método que se encarga de conectarse a la base de datos.
 	 * 
 	 * @throws BusinessException
 	 *             Excepci�n ocurrida al realizar el programa.
@@ -22,7 +22,7 @@ public interface ProveedoresGateway {
 	void setConnection() throws BusinessException;
 
 	/**
-	 * M�todo que a�ade un proveedor a la base de datos.
+	 * Método que a�ade un proveedor a la base de datos.
 	 * 
 	 * @param nombre
 	 *            Nombre del proveedor.
@@ -34,7 +34,7 @@ public interface ProveedoresGateway {
 	void añadirProveedor(String nombre, String codigo) throws BusinessException;
 
 	/**
-	 * M�todo que borra un proveedor de la base de datos.
+	 * Método que borra un proveedor de la base de datos.
 	 * 
 	 * @param idProveedor
 	 *            ID del proveedor.
@@ -44,7 +44,7 @@ public interface ProveedoresGateway {
 	void borrarProveedor(Long idProveedor) throws BusinessException;
 
 	/**
-	 * M�todo que lista los proveedores que hay en la base de datos.
+	 * Método que lista los proveedores que hay en la base de datos.
 	 * 
 	 * @return Una lista los proveedores que hay en la base de datos.
 	 * @throws BusinessException
@@ -53,7 +53,7 @@ public interface ProveedoresGateway {
 	List<Map<String, Object>> listarProveedores() throws BusinessException;
 
 	/**
-	 * M�todo que modica la informaci�n de un proveedor en la base de datos.
+	 * Método que modica la informaci�n de un proveedor en la base de datos.
 	 * 
 	 * @param id
 	 *            ID del proveedor.
@@ -68,7 +68,7 @@ public interface ProveedoresGateway {
 			throws BusinessException;
 
 	/**
-	 * M�todo que busca el ID de un proveedor.
+	 * Método que busca el ID de un proveedor.
 	 * 
 	 * @param nombre
 	 *            Nombre del proveedor.

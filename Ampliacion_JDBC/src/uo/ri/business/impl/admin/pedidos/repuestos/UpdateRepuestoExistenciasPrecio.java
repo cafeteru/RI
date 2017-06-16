@@ -7,10 +7,10 @@ import uo.ri.common.BusinessException;
 import uo.ri.conf.PersistencieFactory;
 
 /**
- * Clase de la parte de lógica encargada de actualizar las existencias y el
+ * Clase de la parte de lï¿½gica encargada de actualizar las existencias y el
  * precio de un repuesto.
  * 
- * @author Iván González Mahagamage
+ * @author IvÃ¡n GonzÃ¡lez Mahagamage
  *
  */
 public class UpdateRepuestoExistenciasPrecio implements Command {

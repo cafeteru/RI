@@ -14,7 +14,7 @@ import uo.ri.persistence.FacturasGateway;
 /**
  * Clase de la parte de persistencia que implementa a la clase FacturasGateway.
  * 
- * @author Iván González Mahagamage
+ * @author IvÃ¡n GonzÃ¡lez Mahagamage
  *
  */
 public class FacturasGatewayImpl extends ConexionGateway
@@ -24,9 +24,9 @@ public class FacturasGatewayImpl extends ConexionGateway
 	 * Constructor por defecto.
 	 * 
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             Excepciï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	public FacturasGatewayImpl() throws SQLException, BusinessException {
 		super();
@@ -58,14 +58,14 @@ public class FacturasGatewayImpl extends ConexionGateway
 	}
 
 	/**
-	 * Método que verifica si en una lista de averías estan todas terminadas.
+	 * MÃ©todo que verifica si en una lista de averï¿½as estan todas terminadas.
 	 * 
 	 * @param idsAveria
-	 *            Lista de averías.
+	 *            Lista de averï¿½as.
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             Excepciï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	private void verificarAveriasTerminadas(List<Long> idsAveria)
 			throws SQLException, BusinessException {
@@ -81,7 +81,7 @@ public class FacturasGatewayImpl extends ConexionGateway
 				String status = rs.getString(1);
 				if (!"TERMINADA".equalsIgnoreCase(status))
 					throw new BusinessException(
-							"No está terminada la avería " + idAveria);
+							"No estï¿½ terminada la averï¿½a " + idAveria);
 			}
 			c.commit();
 		} finally {
@@ -91,16 +91,16 @@ public class FacturasGatewayImpl extends ConexionGateway
 	}
 
 	/**
-	 * Método que cambia el estado de una lista de averías en la base de datos.
+	 * MÃ©todo que cambia el estado de una lista de averï¿½as en la base de datos.
 	 * 
 	 * @param idsAveria
-	 *            Lista de averías.
+	 *            Lista de averï¿½as.
 	 * @param status
-	 *            Estado de la avería.
+	 *            Estado de la averï¿½a.
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             Excepciï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	private void cambiarEstadoAverias(List<Long> idsAveria, String status)
 			throws SQLException, BusinessException {
@@ -119,16 +119,16 @@ public class FacturasGatewayImpl extends ConexionGateway
 	}
 
 	/**
-	 * Método que une una lista de averías a un factura en la base de datos.
+	 * MÃ©todo que une una lista de averï¿½as a un factura en la base de datos.
 	 * 
 	 * @param idFactura
 	 *            ID de la factura.
 	 * @param idsAveria
-	 *            Lista de averías.
+	 *            Lista de averï¿½as.
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             Excepciï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	private void vincularAveriasConFactura(long idFactura, List<Long> idsAveria)
 			throws SQLException, BusinessException {
@@ -147,10 +147,10 @@ public class FacturasGatewayImpl extends ConexionGateway
 	}
 
 	/**
-	 * Método que crea una factura en la base de datos.
+	 * MÃ©todo que crea una factura en la base de datos.
 	 * 
 	 * @param numeroFactura
-	 *            Número de la factura.
+	 *            Nï¿½mero de la factura.
 	 * @param fechaFactura
 	 *            Fecha de la factura
 	 * @param iva
@@ -159,9 +159,9 @@ public class FacturasGatewayImpl extends ConexionGateway
 	 *            Total del importe de la factura aplicando el IVA.
 	 * @return El ID de la factura creada.
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             Excepciï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	private long crearFactura(long numeroFactura, Date fechaFactura, double iva,
 			double totalConIva) throws SQLException, BusinessException {
@@ -183,15 +183,15 @@ public class FacturasGatewayImpl extends ConexionGateway
 	}
 
 	/**
-	 * Método que recupera el ID de una factura.
+	 * MÃ©todo que recupera el ID de una factura.
 	 * 
 	 * @param numeroFactura
-	 *            Número de la factura.
+	 *            Nï¿½mero de la factura.
 	 * @return El ID de una factura
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             Excepciï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	private long getGeneratedKey(long numeroFactura)
 			throws SQLException, BusinessException {
@@ -209,13 +209,13 @@ public class FacturasGatewayImpl extends ConexionGateway
 	}
 
 	/**
-	 * Método que genera el nuevo ID de una factura.
+	 * MÃ©todo que genera el nuevo ID de una factura.
 	 * 
 	 * @return El nuevo ID de una factura
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             Excepciï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	private Long generarNuevoNumeroFactura()
 			throws SQLException, BusinessException {
@@ -248,16 +248,16 @@ public class FacturasGatewayImpl extends ConexionGateway
 	}
 
 	/**
-	 * Método que calcula los importes de una lista de averías en la base de
+	 * MÃ©todo que calcula los importes de una lista de averï¿½as en la base de
 	 * datos.
 	 * 
 	 * @param idsAveria
-	 *            Lista de averías.
-	 * @return El importe total de una lista de averías.
+	 *            Lista de averï¿½as.
+	 * @return El importe total de una lista de averï¿½as.
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             Excepciï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	protected double calcularImportesAverias(List<Long> idsAveria)
 			throws BusinessException, SQLException {
@@ -273,16 +273,16 @@ public class FacturasGatewayImpl extends ConexionGateway
 	}
 
 	/**
-	 * Método que actualiza el importe de una avería.
+	 * MÃ©todo que actualiza el importe de una averï¿½a.
 	 * 
 	 * @param idAveria
-	 *            ID de la avería.
+	 *            ID de la averï¿½a.
 	 * @param totalAveria
-	 *            Total del importe de la avería.
+	 *            Total del importe de la averï¿½a.
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             Excepciï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	private void actualizarImporteAveria(Long idAveria, double totalAveria)
 			throws SQLException, BusinessException {
@@ -298,15 +298,15 @@ public class FacturasGatewayImpl extends ConexionGateway
 	}
 
 	/**
-	 * Método que devuelve el importe de los repuestos usados en una avería.
+	 * MÃ©todo que devuelve el importe de los repuestos usados en una averï¿½a.
 	 * 
 	 * @param idAveria
-	 *            ID de la avería.
-	 * @return El importe de los repuestos usados en una avería.
+	 *            ID de la averï¿½a.
+	 * @return El importe de los repuestos usados en una averï¿½a.
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             Excepciï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	private double consultaImporteRepuestos(Long idAveria)
 			throws SQLException, BusinessException {
@@ -325,15 +325,15 @@ public class FacturasGatewayImpl extends ConexionGateway
 	}
 
 	/**
-	 * Método que calcula el importe mano de obra necesitada en una avería.
+	 * MÃ©todo que calcula el importe mano de obra necesitada en una averï¿½a.
 	 * 
 	 * @param idAveria
-	 *            ID de la avería.
-	 * @return El importe mano de obra necesitada en una avería
+	 *            ID de la averï¿½a.
+	 * @return El importe mano de obra necesitada en una averï¿½a
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             Excepciï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	private double consultaImporteManoObra(Long idAveria)
 			throws BusinessException, SQLException {

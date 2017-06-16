@@ -7,9 +7,9 @@ import uo.ri.common.BusinessException;
 import uo.ri.conf.PersistencieFactory;
 
 /**
- * Clase de la parte de lógica encargada de actualizar los datos de un mecánico.
+ * Clase de la parte de lï¿½gica encargada de actualizar los datos de un mecï¿½nico.
  * 
- * @author Iván González Mahagamage
+ * @author IvÃ¡n GonzÃ¡lez Mahagamage
  *
  */
 public class UpdateMechanic implements Command {
@@ -17,14 +17,14 @@ public class UpdateMechanic implements Command {
 	private String nombre, apellidos;
 
 	/**
-	 * Constructor con parámetros
+	 * Constructor con parÃ¡metros
 	 * 
 	 * @param id
-	 *            ID del mecánico.
+	 *            ID del mecï¿½nico.
 	 * @param nombre
-	 *            Nombre del mecánico.
+	 *            Nombre del mecï¿½nico.
 	 * @param apellidos
-	 *            Apellidos del mecánico.
+	 *            Apellidos del mecï¿½nico.
 	 */
 	public UpdateMechanic(Long id, String nombre, String apellidos) {
 		this.id = id;

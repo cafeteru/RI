@@ -8,10 +8,10 @@ import uo.ri.common.BusinessException;
 import uo.ri.conf.PersistencieFactory;
 
 /**
- * Clase de la parte de lógica encargada de crear una factura con las averías
+ * Clase de la parte de lï¿½gica encargada de crear una factura con las averï¿½as
  * indicadas.
  * 
- * @author Iván González Mahagamage
+ * @author IvÃ¡n GonzÃ¡lez Mahagamage
  *
  */
 
@@ -19,25 +19,25 @@ public class CreateInvoiceFor {
 	private List<Long> idsAveria;
 
 	/**
-	 * Constructor con parámetros.
+	 * Constructor con parÃ¡metros.
 	 * 
 	 * @param idsAveria
 	 *            Lista de averias
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	public CreateInvoiceFor(List<Long> idsAveria) throws SQLException {
 		this.idsAveria = idsAveria;
 	}
 
 	/**
-	 * Crea la factura para un cliente con la lista de averías.
+	 * Crea la factura para un cliente con la lista de averï¿½as.
 	 * 
 	 * @return Una factura
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             Excepciï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	public Map<String, Object> execute()
 			throws SQLException, BusinessException {

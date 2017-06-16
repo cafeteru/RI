@@ -9,17 +9,17 @@ import uo.ri.common.BusinessException;
 import uo.ri.conf.PersistencieFactory;
 
 /**
- * Clase de la parte de lógica encargada de listar todos los pedidos en los que
+ * Clase de la parte de lï¿½gica encargada de listar todos los pedidos en los que
  * aparezca un repuesto.
  * 
- * @author Iván González Mahagamage
+ * @author IvÃ¡n GonzÃ¡lez Mahagamage
  *
  */
 public class FindAllRepuestosPedido implements CommandList {
 	Long idPedido;
 
 	/**
-	 * Constructor con parámetros.
+	 * Constructor con parÃ¡metros.
 	 * 
 	 * @param idPedido
 	 *            ID del pedido

@@ -1,9 +1,9 @@
 package uo.ri.common;
 
 /**
- * Clase que crea una excepción personalizada para nuestro proyecto.
+ * Clase que crea una excepciï¿½n personalizada para nuestro proyecto.
  * 
- * @author Iván González Mahagamage
+ * @author IvÃ¡n GonzÃ¡lez Mahagamage
  *
  */
 public class BusinessException extends Exception {
@@ -16,32 +16,32 @@ public class BusinessException extends Exception {
 	}
 
 	/**
-	 * Muestra un mensaje cuando ocurre una excepción
+	 * Muestra un mensaje cuando ocurre una excepciï¿½n
 	 * 
 	 * @param message
-	 *            Mensaje de la excepción
+	 *            Mensaje de la excepciï¿½n
 	 */
 	public BusinessException(String message) {
 		super(message);
 	}
 
 	/**
-	 * Muestra la causa de una excepción
+	 * Muestra la causa de una excepciï¿½n
 	 * 
 	 * @param cause
-	 *            Causa de la excepción
+	 *            Causa de la excepciï¿½n
 	 */
 	public BusinessException(Throwable cause) {
 		super(cause);
 	}
 
 	/**
-	 * Muestra la causa y un mensaje de una excepción
+	 * Muestra la causa y un mensaje de una excepciï¿½n
 	 * 
 	 * @param message
-	 *            Mensaje de la excepción
+	 *            Mensaje de la excepciï¿½n
 	 * @param cause
-	 *            Causa de la excepción
+	 *            Causa de la excepciï¿½n
 	 */
 	public BusinessException(String message, Throwable cause) {
 		super(message, cause);

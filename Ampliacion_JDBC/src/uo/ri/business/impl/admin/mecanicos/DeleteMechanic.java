@@ -7,19 +7,19 @@ import uo.ri.common.BusinessException;
 import uo.ri.conf.PersistencieFactory;
 
 /**
- * Clase de la parte de lógica encargada de borrar mecánico.
+ * Clase de la parte de lï¿½gica encargada de borrar mecï¿½nico.
  * 
- * @author Iván González Mahagamage
+ * @author IvÃ¡n GonzÃ¡lez Mahagamage
  *
  */
 public class DeleteMechanic implements Command {
 	private Long idMecanico;
 
 	/**
-	 * Constructor con parámetos.
+	 * Constructor con parÃ¡metros.
 	 * 
 	 * @param idMecanico
-	 *            Id del mecánico.
+	 *            Id del mecï¿½nico.
 	 */
 	public DeleteMechanic(Long idMecanico) {
 		this.idMecanico = idMecanico;

@@ -7,16 +7,16 @@ import uo.ri.common.BusinessException;
 import uo.ri.conf.PersistencieFactory;
 
 /**
- * Clase de la parte de lógica encargada de borrar un proveedor.
+ * Clase de la parte de lï¿½gica encargada de borrar un proveedor.
  * 
- * @author Iván González Mahagamage
+ * @author IvÃ¡n GonzÃ¡lez Mahagamage
  *
  */
 public class DeleteProveedor implements Command {
 	Long idProveedor;
 
 	/**
-	 * Constructor con parámetros.
+	 * Constructor con parÃ¡metros.
 	 * 
 	 * @param idProveedor
 	 *            ID del proveedor.

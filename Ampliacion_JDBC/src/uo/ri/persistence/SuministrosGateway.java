@@ -15,7 +15,7 @@ import uo.ri.common.BusinessException;
  */
 public interface SuministrosGateway {
 	/**
-	 * M�todo que se encarga de conectarse a la base de datos.
+	 * Método que se encarga de conectarse a la base de datos.
 	 * 
 	 * @throws BusinessException
 	 *             Excepci�n ocurrida al realizar el programa.
@@ -23,7 +23,7 @@ public interface SuministrosGateway {
 	void setConnection() throws BusinessException;
 
 	/**
-	 * M�todo que a�ade un repuesto suministrado por un proveedor de la base de
+	 * Método que a�ade un repuesto suministrado por un proveedor de la base de
 	 * datos.
 	 * 
 	 * @param idRepuesto
@@ -41,7 +41,7 @@ public interface SuministrosGateway {
 			throws BusinessException, SQLException;
 
 	/**
-	 * M�todo que borra un repuesto suministrado por un proveedor de la base de
+	 * Método que borra un repuesto suministrado por un proveedor de la base de
 	 * datos.
 	 * 
 	 * @param idRepuesto
@@ -57,7 +57,7 @@ public interface SuministrosGateway {
 			throws BusinessException, SQLException;
 
 	/**
-	 * M�todo que lista los repuestos que suministra un proveedor.
+	 * Método que lista los repuestos que suministra un proveedor.
 	 * 
 	 * @param idProveedor
 	 *            ID del proveedor.
@@ -71,7 +71,7 @@ public interface SuministrosGateway {
 			throws BusinessException, SQLException;
 
 	/**
-	 * M�todo que lista los proveedores que suministran un suministro
+	 * Método que lista los proveedores que suministran un suministro
 	 * 
 	 * @param idRepuesto
 	 *            ID del repuesto.

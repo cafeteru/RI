@@ -7,10 +7,10 @@ import uo.ri.common.BusinessException;
 import uo.ri.conf.PersistencieFactory;
 
 /**
- * Clase de la parte de lógica encargada de actualizar la información de un
+ * Clase de la parte de lï¿½gica encargada de actualizar la informaciï¿½n de un
  * repuesto suministrado por un proveedor.
  * 
- * @author Iván González Mahagamage
+ * @author IvÃ¡n GonzÃ¡lez Mahagamage
  *
  */
 public class UpdateSuministros implements Command {
@@ -18,7 +18,7 @@ public class UpdateSuministros implements Command {
 	Double precio;
 
 	/**
-	 * Constructor con parámetros.
+	 * Constructor con parÃ¡metros.
 	 * 
 	 * @param idRepuesto
 	 *            ID del repuesto.

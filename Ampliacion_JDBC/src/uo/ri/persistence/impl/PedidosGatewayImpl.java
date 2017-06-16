@@ -12,7 +12,7 @@ import uo.ri.ui.util.CalculosMatematicos;
 /**
  * Clase de la parte de persistencia que implementa a la clase PedidosGateway.
  * 
- * @author Iván González Mahagamage
+ * @author IvÃ¡n GonzÃ¡lez Mahagamage
  *
  */
 public class PedidosGatewayImpl extends ConexionGateway
@@ -23,9 +23,9 @@ public class PedidosGatewayImpl extends ConexionGateway
 	 * Constructor por defecto.
 	 * 
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             Excepciï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	public PedidosGatewayImpl() throws SQLException, BusinessException {
 		super();
@@ -52,9 +52,9 @@ public class PedidosGatewayImpl extends ConexionGateway
 	 * @param idProveedor
 	 * @param SQL
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             Excepciï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	private void leerPedidos(Long idProveedor, String SQL)
 			throws SQLException, BusinessException {
@@ -112,9 +112,9 @@ public class PedidosGatewayImpl extends ConexionGateway
 	 * 
 	 * @param idPedido
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             Excepciï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	private void verificarPedido(Long idPedido)
 			throws SQLException, BusinessException {

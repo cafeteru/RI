@@ -15,7 +15,7 @@ import uo.ri.common.BusinessException;
  */
 public interface FacturasGateway {
 	/**
-	 * M�todo que se encarga de conectarse a la base de datos.
+	 * Método que se encarga de conectarse a la base de datos.
 	 * 
 	 * @throws BusinessException
 	 *             Excepci�n ocurrida al realizar el programa.
@@ -23,7 +23,7 @@ public interface FacturasGateway {
 	void setConnection() throws BusinessException;
 
 	/**
-	 * M�todo que crea una factura en la base de datos.
+	 * Método que crea una factura en la base de datos.
 	 * 
 	 * @param idsAveria
 	 *            Una lista de aver�as de la factura.

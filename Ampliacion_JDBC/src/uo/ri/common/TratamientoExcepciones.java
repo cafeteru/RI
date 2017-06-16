@@ -9,7 +9,7 @@ import alb.util.properties.Settings;
  * Clase que trata las excepciones que se producen durante la ejecución del
  * programa.
  * 
- * @author Iv�n Gonz�lez Mahagamage
+ * @author Iván González Mahagamage
  *
  */
 public class TratamientoExcepciones {

@@ -6,10 +6,10 @@ import uo.ri.common.BusinessException;
 import uo.ri.common.TratamientoExcepciones;
 
 /**
- * Clase de la parte de persistencia que se encarga de realizar la conexión a la
+ * Clase de la parte de persistencia que se encarga de realizar la conexiï¿½n a la
  * base de datos.
  * 
- * @author Iván González Mahagamage
+ * @author IvÃ¡n GonzÃ¡lez Mahagamage
  *
  */
 public class ConexionGateway {
@@ -21,19 +21,19 @@ public class ConexionGateway {
 	 * Constructor por defecto.
 	 * 
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             Excepciï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	public ConexionGateway() throws SQLException, BusinessException {
 		setConnection();
 	}
 
 	/**
-	 * Método que se encarga de conectarse a la base de datos.
+	 * MÃ©todo que se encarga de conectarse a la base de datos.
 	 * 
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             Excepciï¿½n ocurrida al realizar el programa.
 	 */
 	public void setConnection() throws BusinessException {
 		c = TratamientoExcepciones.setConnection();

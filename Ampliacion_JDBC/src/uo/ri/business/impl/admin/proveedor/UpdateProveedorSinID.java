@@ -7,10 +7,10 @@ import uo.ri.common.BusinessException;
 import uo.ri.conf.PersistencieFactory;
 
 /**
- * Clase de la parte de lógica encargada de actualizar un proveedor
+ * Clase de la parte de lï¿½gica encargada de actualizar un proveedor
  * desconociendo su ID pero sabiendo su nombre.
  * 
- * @author Iván González Mahagamage
+ * @author IvÃ¡n GonzÃ¡lez Mahagamage
  *
  */
 public class UpdateProveedorSinID implements Command {
@@ -18,7 +18,7 @@ public class UpdateProveedorSinID implements Command {
 	String nombreNuevo;
 
 	/**
-	 * Constructor con parámetros.
+	 * Constructor con parï¿½metros.
 	 * 
 	 * @param nombre
 	 *            Nombre del proveedor.

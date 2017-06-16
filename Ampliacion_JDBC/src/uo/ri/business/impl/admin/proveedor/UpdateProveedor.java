@@ -7,10 +7,10 @@ import uo.ri.common.BusinessException;
 import uo.ri.conf.PersistencieFactory;
 
 /**
- * Clase de la parte de lógica encargada de actualizar un proveedor sabiendo su
+ * Clase de la parte de lï¿½gica encargada de actualizar un proveedor sabiendo su
  * ID.
  * 
- * @author Iván González Mahagamage
+ * @author IvÃ¡n GonzÃ¡lez Mahagamage
  *
  */
 public class UpdateProveedor implements Command {
@@ -18,7 +18,7 @@ public class UpdateProveedor implements Command {
 	private String nombre, codigo;
 
 	/**
-	 * Constructor con parámetros.
+	 * Constructor con parÃ¡metros.
 	 * 
 	 * @param id
 	 *            ID del proveedor.

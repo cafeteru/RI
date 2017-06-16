@@ -7,23 +7,23 @@ import java.util.Map;
 import uo.ri.common.BusinessException;
 
 /**
- * Interfaz de la parte de lógica que declara los métodos que usa la clase Cash
+ * Interfaz de la parte de lï¿½gica que declara los mÃ©todos que usa la clase Cash
  * 
- * @author Iván González Mahagamage
+ * @author IvÃ¡n GonzÃ¡lez Mahagamage
  *
  */
 
 public interface CashService {
 	/**
-	 * Crea la factura de las averías del cliente.
+	 * Crea la factura de las averï¿½as del cliente.
 	 * 
 	 * @param idsAveria
 	 *            Lista de averias
 	 * @return La factura del cliente.
 	 * @throws BusinessException
-	 *             Excepixión ocurrida al realizar el programa.
+	 *             Excepixiï¿½n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             Excepciï¿½n ocurrida al realizar secuencias SQL.
 	 */
 	Map<String, Object> createInvoiceFor(List<Long> idsAveria)
 			throws BusinessException, SQLException;
