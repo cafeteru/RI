@@ -7,21 +7,21 @@ import uo.ri.conf.PersistencieFactory;
 import uo.ri.ui.util.interfaces.Command;
 
 /**
- * Clase de la parte de l�gica encargada de crear un nuevo mec�nico.
+ * Clase de la parte de lógica encargada de crear un nuevo mec�nico.
  * 
- * @author Iv�n Gonz�lez Mahagamage
+ * @author Iván González Mahagamage
  *
  */
 public class AddMechanic implements Command {
 	private String nombre, apellidos;
 
 	/**
-	 * Constructor con par�metros.
+	 * Constructor con parámetros.
 	 * 
 	 * @param nombre
-	 *            Nombre del nuevo mec�nico.
+	 *            Nombre del nuevo mecánico.
 	 * @param apellidos
-	 *            Apellidos del nuevo mec�nico.
+	 *            Apellidos del nuevo mecánico.
 	 */
 	public AddMechanic(String nombre, String apellidos) {
 		this.nombre = nombre;
@@ -30,7 +30,8 @@ public class AddMechanic implements Command {
 
 	@Override
 	public void execute() throws BusinessException, SQLException {
-		PersistencieFactory.getMecanicosGateway().añadirMecanico(nombre, apellidos);
+		PersistencieFactory.getMecanicosGateway().añadirMecanico(nombre,
+				apellidos);
 	}
 
 }

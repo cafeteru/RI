@@ -6,20 +6,20 @@ import alb.util.jdbc.Jdbc;
 import alb.util.properties.Settings;
 
 /**
- * Clase que trata las excepciones que se producen durante la ejecución del
+ * Clase que trata las excepciones que se producen durante la ejecuciÃ³n del
  * programa.
  * 
- * @author Iván González Mahagamage
+ * @author Ivï¿½n Gonzï¿½lez Mahagamage
  *
  */
 public class TratamientoExcepciones {
 
 	/**
-	 * Método estático que conecta a una base de datos.
+	 * MÃ©todo estÃ¡tico que conecta a una base de datos.
 	 * 
-	 * @return Una conexión a una base de datos.
+	 * @return Una conexiï¿½n a una base de datos.
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             ExcepciÃ³n ocurrida al realizar el programa.
 	 */
 	public static Connection setConnection() throws BusinessException {
 		try {
@@ -29,23 +29,21 @@ public class TratamientoExcepciones {
 		} catch (SQLException e) {
 			throw new BusinessException(
 					"Error al conectar con la base de datos");
-		} catch (Exception e) {
-			throw new BusinessException(e.getMessage());
 		}
 	}
 
 	/**
-	 * Método estático que prepara una consulta en una base de datos.
+	 * MÃ©todo estÃ¡tico que prepara una consulta en una base de datos.
 	 * 
 	 * @param c
-	 *            Conexión a la base de datos.
+	 *            Conexiï¿½n a la base de datos.
 	 * @param sentencia
 	 *            Sentencia SQL.
 	 * @return Un PreparedStatement con la consulta SQL.
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             ExcepciÃ³n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             ExcepciÃ³n ocurrida al realizar secuencias SQL.
 	 */
 	public static PreparedStatement configurarPreparementStament(Connection c,
 			String sentencia) throws SQLException, BusinessException {
@@ -57,162 +55,150 @@ public class TratamientoExcepciones {
 		} catch (SQLSyntaxErrorException e) {
 			throw new BusinessException(
 					"La sentencia SQL no es correcta -> " + sentencia);
-		} catch (Exception e) {
-			throw new BusinessException(e.getMessage());
 		}
 	}
 
 	/**
-	 * Método estático que inserta un String en un PreparedStatement.
+	 * MÃ©todo estÃ¡tico que inserta un String en un PreparedStatement.
 	 * 
 	 * @param pst
 	 *            PreparedStatement con la consulta SQL.
 	 * @param posicion
-	 *            Posicion del paraámetro de la consulta
+	 *            Posicion del parÃ¡metro de la consulta
 	 * @param valor
-	 *            Parámetro a añadir a la consulta
+	 *            ParÃ¡metro a aÃ±adir a la consulta
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             ExcepciÃ³n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             ExcepciÃ³n ocurrida al realizar secuencias SQL.
 	 */
 	public static void setString(PreparedStatement pst, int posicion,
 			String valor) throws SQLException, BusinessException {
 		try {
 			pst.setString(posicion, valor);
 		} catch (NullPointerException e) {
-			throw new BusinessException("Error al modificar el parámetro -> "
+			throw new BusinessException("Error al modificar el ParÃ¡metro -> "
 					+ posicion + " para la sentencia SQL");
 		} catch (SQLException e) {
 			throw new BusinessException("Error al ejecutar la consulta");
-		} catch (Exception e) {
-			throw new BusinessException(e.getMessage());
 		}
 	}
 
 	/**
-	 * Método estático que inserta un int en un PreparedStatement.
+	 * MÃ©todo estÃ¡tico que inserta un int en un PreparedStatement.
 	 * 
 	 * @param pst
 	 *            PreparedStatement con la consulta SQL.
 	 * @param posicion
-	 *            Posicion del paraámetro de la consulta.
+	 *            Posicion del parÃ¡metro de la consulta.
 	 * @param valor
-	 *            Parámetro a añadir a la consulta.
+	 *            ParÃ¡metro a aÃ±adir a la consulta.
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             ExcepciÃ³n ocurrida al realizar el programa.
 	 */
 	public static void setInt(PreparedStatement pst, int posicion, int valor)
 			throws BusinessException {
 		try {
 			pst.setInt(posicion, valor);
 		} catch (NullPointerException e) {
-			throw new BusinessException("Error al modificar el parámetro -> "
+			throw new BusinessException("Error al modificar el ParÃ¡metro -> "
 					+ posicion + " para la sentencia SQL");
 		} catch (SQLException e) {
 			throw new BusinessException("Error al ejecutar la consulta");
-		} catch (Exception e) {
-			throw new BusinessException(e.getMessage());
 		}
 	}
 
 	/**
-	 * Método estático que inserta un Long en un PreparedStatement.
+	 * MÃ©todo estÃ¡tico que inserta un Long en un PreparedStatement.
 	 * 
 	 * @param pst
 	 *            PreparedStatement con la consulta SQL.
 	 * @param posicion
-	 *            Posicion del paraámetro de la consulta.
+	 *            Posicion del parÃ¡metro de la consulta.
 	 * @param valor
-	 *            Parámetro a añadir a la consulta.
+	 *            ParÃ¡metro a aÃ±adir a la consulta.
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             ExcepciÃ³n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             ExcepciÃ³n ocurrida al realizar secuencias SQL.
 	 */
 	public static void setLong(PreparedStatement pst, int posicion, Long valor)
 			throws SQLException, BusinessException {
 		try {
 			pst.setLong(posicion, valor);
 		} catch (NullPointerException e) {
-			throw new BusinessException("Error al modificar el parámetro -> "
+			throw new BusinessException("Error al modificar el ParÃ¡metro -> "
 					+ posicion + " para la sentencia SQL");
 		} catch (SQLException e) {
 			throw new BusinessException("Error al ejecutar la consulta");
-		} catch (Exception e) {
-			throw new BusinessException(e.getMessage());
 		}
 	}
 
 	/**
-	 * Método estático que inserta un Double en un PreparedStatement.
+	 * MÃ©todo estÃ¡tico que inserta un Double en un PreparedStatement.
 	 * 
 	 * @param pst
 	 *            PreparedStatement con la consulta SQL.
 	 * @param posicion
-	 *            Posicion del paraámetro de la consulta.
+	 *            Posicion del parÃ¡metro de la consulta.
 	 * @param valor
-	 *            Parámetro a añadir a la consulta.
+	 *            ParÃ¡metro a aÃ±adir a la consulta.
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             ExcepciÃ³n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             ExcepciÃ³n ocurrida al realizar secuencias SQL.
 	 */
 	public static void setDouble(PreparedStatement pst, int posicion,
 			double valor) throws SQLException, BusinessException {
 		try {
 			pst.setDouble(posicion, valor);
 		} catch (NullPointerException e) {
-			throw new BusinessException("Error al modificar el parámetro -> "
+			throw new BusinessException("Error al modificar el ParÃ¡metro -> "
 					+ posicion + " para la sentencia SQL");
 		} catch (SQLException e) {
 			throw new BusinessException("Error al ejecutar la consulta");
-		} catch (Exception e) {
-			throw new BusinessException(e.getMessage());
 		}
 	}
 
 	/**
-	 * Método estático que inserta un fecha en un PreparedStatement.
+	 * MÃ©todo estÃ¡tico que inserta un fecha en un PreparedStatement.
 	 * 
 	 * @param pst
 	 *            PreparedStatement con la consulta SQL.
 	 * @param posicion
-	 *            Posicion del paraámetro de la consulta.
+	 *            Posicion del parÃ¡metro de la consulta.
 	 * @param valor
-	 *            Parámetro a añadir a la consulta.
+	 *            ParÃ¡metro a aÃ±adir a la consulta.
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             ExcepciÃ³n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             ExcepciÃ³n ocurrida al realizar secuencias SQL.
 	 */
 	public static void setDate(PreparedStatement pst, int posicion, Date valor)
 			throws SQLException, BusinessException {
 		try {
 			pst.setDate(posicion, valor);
 		} catch (NullPointerException e) {
-			throw new BusinessException("Error al modificar el parámetro -> "
+			throw new BusinessException("Error al modificar el ParÃ¡metro -> "
 					+ posicion + " para la sentencia SQL");
 		} catch (SQLException e) {
 			throw new BusinessException("Error al ejecutar la consulta");
-		} catch (Exception e) {
-			throw new BusinessException(e.getMessage());
 		}
 	}
 
 	/**
-	 * Método estático que inserta un fecha en un PreparedStatement.
+	 * MÃ©todo estÃ¡tico que inserta un fecha en un PreparedStatement.
 	 * 
 	 * @param pst
 	 *            PreparedStatement con la consulta SQL.
 	 * @param posicion
-	 *            Posicion del paraámetro de la consulta.
+	 *            Posicion del parÃ¡metro de la consulta.
 	 * @param valor
-	 *            Parámetro a añadir a la consulta.
+	 *            ParÃ¡metro a aÃ±adir a la consulta.
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             ExcepciÃ³n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             ExcepciÃ³n ocurrida al realizar secuencias SQL.
 	 */
 	public static void setDate(PreparedStatement pst, int posicion, long valor)
 			throws BusinessException, SQLException {
@@ -220,24 +206,22 @@ public class TratamientoExcepciones {
 		try {
 			pst.setDate(posicion, fecha);
 		} catch (NullPointerException e) {
-			throw new BusinessException("Error al modificar el parámetro -> "
+			throw new BusinessException("Error al modificar el ParÃ¡metro -> "
 					+ posicion + " para la sentencia SQL");
 		} catch (SQLException e) {
 			throw new BusinessException("Error al ejecutar la consulta");
-		} catch (Exception e) {
-			throw new BusinessException(e.getMessage());
 		}
 	}
 
 	/**
-	 * Método estático ejecuta una consulta que actualiza una base de datos.
+	 * MÃ©todo estÃ¡tico ejecuta una consulta que actualiza una base de datos.
 	 * 
 	 * @param pst
 	 *            PreparedStatement con la consulta SQL.
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             ExcepciÃ³n ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepción ocurrida al realizar secuencias SQL.
+	 *             ExcepciÃ³n ocurrida al realizar secuencias SQL.
 	 */
 	public static void executeUpdate(PreparedStatement pst)
 			throws SQLException, BusinessException {
@@ -245,24 +229,22 @@ public class TratamientoExcepciones {
 			pst.executeUpdate();
 		} catch (SQLIntegrityConstraintViolationException e) {
 			throw new BusinessException(
-					"Violación de restricción de integridad");
+					"ViolaciÃ³n de restricciÃ³n de integridad");
 		} catch (SQLException e) {
 			throw new BusinessException(
-					"Todos los parámetros no han sido indicados");
-		} catch (Exception e) {
-			throw new BusinessException(e.getMessage());
+					"Todos los parÃ¡metros no han sido indicados");
 		}
 	}
 
 	/**
-	 * Método estático que Ejecuta una consulta que devuelve datos de una base
+	 * MÃ©todo estÃ¡tico que Ejecuta una consulta que devuelve datos de una base
 	 * de datos.
 	 * 
 	 * @param pst
 	 *            PreparedStatement con la consulta SQL.
 	 * @return Un ResultSet con los datos de la consulta.
 	 * @throws BusinessException
-	 *             Excepción ocurrida al realizar el programa.
+	 *             ExcepciÃ³n ocurrida al realizar el programa.
 	 */
 	public static ResultSet executeQuery(PreparedStatement pst)
 			throws BusinessException {
@@ -270,8 +252,6 @@ public class TratamientoExcepciones {
 			return pst.executeQuery();
 		} catch (SQLException e) {
 			throw new BusinessException("Fallo al ejecutar la consulta");
-		} catch (Exception e) {
-			throw new BusinessException(e.getMessage());
 		}
 	}
 

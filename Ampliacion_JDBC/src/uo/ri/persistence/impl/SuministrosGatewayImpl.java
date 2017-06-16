@@ -90,11 +90,11 @@ public class SuministrosGatewayImpl extends ConexionGateway
 	}
 
 	/**
-	 * M�todo que lista de repuestos suministrados por un proveedor.
+	 * Método que lista de repuestos suministrados por un proveedor.
 	 * 
 	 * @return Una lista de repuestos suministrados por un proveedor.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	private List<Map<String, Object>> listarSuministros() throws SQLException {
 		List<Map<String, Object>> suministros;
