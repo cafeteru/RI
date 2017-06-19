@@ -17,9 +17,9 @@ public class ProveedoresMenu extends BaseMenu {
 	 */
 	public ProveedoresMenu() {
 		menuOptions = new Object[][] {
-				{ "Administrador > Gesti�n de proveedores", null },
+				{ "Administrador > Gestión de proveedores", null },
 
-				{ "A�adir proveedor", AddProveedorAction.class },
+				{ "Añadir proveedor", AddProveedorAction.class },
 				{ "Modificar datos de proveedor", UpdateProveedorAction.class },
 				{ "Eliminar proveedor", DeleteProveedorAction.class },
 				{ "Listar proveedor", ListProveedorAction.class }, };

@@ -27,7 +27,7 @@ public class FacturarReparacionesAction implements Action {
 	}
 
 	private boolean masAverias() {
-		return Console.readString("¿Añadir más averias? (s/n) ")
+		return Console.readString("Â¿AÃ±adir mÃ¡s averias? (s/n) ")
 				.equalsIgnoreCase("s");
 	}
 }

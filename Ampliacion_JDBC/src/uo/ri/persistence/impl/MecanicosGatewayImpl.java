@@ -18,9 +18,9 @@ public class MecanicosGatewayImpl extends ConexionGateway implements MecanicosGa
 	 * Constructor por defecto.
 	 * 
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	public MecanicosGatewayImpl() throws SQLException, BusinessException {
 		super();

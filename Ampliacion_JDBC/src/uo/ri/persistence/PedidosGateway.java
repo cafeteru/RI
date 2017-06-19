@@ -17,7 +17,7 @@ public interface PedidosGateway {
 	 * Método que se encarga de conectarse a la base de datos.
 	 * 
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 */
 	void setConnection() throws BusinessException;
 
@@ -29,7 +29,7 @@ public interface PedidosGateway {
 	 *            ID del proveedor.
 	 * @return Una lista todos los pedidos realizados a un proveedor
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 */
 	List<Map<String, Object>> listarPedidosProveedor(Long idProveedor)
 			throws BusinessException;
@@ -42,7 +42,7 @@ public interface PedidosGateway {
 	 *            ID del pedido.
 	 * @return Una lista todos los repuestos que hay en un pedido.
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 */
 	List<Map<String, Object>> listarRepuestosPedidoId(Long idPedido)
 			throws BusinessException;
@@ -56,7 +56,7 @@ public interface PedidosGateway {
 	 * @param idPedido
 	 *            ID del pedido.
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 */
 	void modificarExistenciasPrecioRepuesto(Long idRepuesto, Long idPedido)
 			throws BusinessException;
@@ -68,7 +68,7 @@ public interface PedidosGateway {
 	 * @param idPedido
 	 *            ID del pedido.
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 */
 	void modificarFechaRecepcionEstadoPedido(Long idPedido)
 			throws BusinessException;

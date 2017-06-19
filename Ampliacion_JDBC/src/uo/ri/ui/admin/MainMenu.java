@@ -8,9 +8,9 @@ import uo.ri.ui.admin.menus.RepuestosMenu;
 import uo.ri.ui.admin.menus.SuministrosMenu;
 
 /**
- * Clase en la interfaz de usuario que crea el menú principal del administrador
+ * Clase en la interfaz de usuario que crea el menï¿½ principal del administrador
  * 
- * @author Iván González Mahagamage
+ * @author Ivï¿½n Gonzï¿½lez Mahagamage
  *
  */
 public class MainMenu extends BaseMenu {
@@ -18,11 +18,11 @@ public class MainMenu extends BaseMenu {
 	public MainMenu() {
 		menuOptions = new Object[][] { 
 			{ "Administrador", null },
-			{ "Gestión de mecánicos", MecanicosMenu.class }, 
-			{ "Gestión de repuestos (Ampliado)", RepuestosMenu.class },
-			{ "Gestión de proveedores", ProveedoresMenu.class },
-			{ "Gestión de los repuestos suministrados por proveedor", SuministrosMenu.class },
-			{ "Gestión de pedidos", PedidosMenu.class },
+			{ "GestiÃ³n de mecÃ¡nicos", MecanicosMenu.class }, 
+			{ "GestiÃ³n de repuestos (Ampliado)", RepuestosMenu.class },
+			{ "GestiÃ³n de proveedores", ProveedoresMenu.class },
+			{ "GestiÃ³n de los repuestos suministrados por proveedor", SuministrosMenu.class },
+			{ "GestiÃ³n de pedidos", PedidosMenu.class },
 		};
 	}
 

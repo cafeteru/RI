@@ -21,9 +21,9 @@ public class ConexionGateway {
 	 * Constructor por defecto.
 	 * 
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	public ConexionGateway() throws SQLException, BusinessException {
 		setConnection();
@@ -33,7 +33,7 @@ public class ConexionGateway {
 	 * Método que se encarga de conectarse a la base de datos.
 	 * 
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 */
 	public void setConnection() throws BusinessException {
 		c = TratamientoExcepciones.setConnection();

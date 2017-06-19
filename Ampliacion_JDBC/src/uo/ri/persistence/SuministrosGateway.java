@@ -18,7 +18,7 @@ public interface SuministrosGateway {
 	 * Método que se encarga de conectarse a la base de datos.
 	 * 
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 */
 	void setConnection() throws BusinessException;
 
@@ -33,9 +33,9 @@ public interface SuministrosGateway {
 	 * @param precio
 	 *            Precio del respuesto.
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	void añadirSuministros(Long idRepuesto, Long idProveedor, Double precio)
 			throws BusinessException, SQLException;
@@ -49,9 +49,9 @@ public interface SuministrosGateway {
 	 * @param idProveedor
 	 *            ID del proveedor.
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	void borrarSuministros(Long idRepuesto, Long idProveedor)
 			throws BusinessException, SQLException;
@@ -63,9 +63,9 @@ public interface SuministrosGateway {
 	 *            ID del proveedor.
 	 * @return Una lista con los repuestos que suministra un proveedor.
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	List<Map<String, Object>> listarSuministrosProveedor(Long idProveedor)
 			throws BusinessException, SQLException;
@@ -77,15 +77,15 @@ public interface SuministrosGateway {
 	 *            ID del repuesto.
 	 * @return Una lista de los proveedores que suministran un suministro
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	List<Map<String, Object>> listarSuministrosRepuesto(Long idRepuesto)
 			throws BusinessException, SQLException;
 
 	/**
-	 * Actualiza la informaci�n de un repuesto suministrado por proveedor.
+	 * Actualiza la información de un repuesto suministrado por proveedor.
 	 * 
 	 * @param idRepuesto
 	 *            ID del repuesto.
@@ -94,9 +94,9 @@ public interface SuministrosGateway {
 	 * @param precio
 	 *            Precio del respuesto.
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	void actualizarSuministro(Long idRepuesto, Long idProveedor, Double precio)
 			throws BusinessException, SQLException;

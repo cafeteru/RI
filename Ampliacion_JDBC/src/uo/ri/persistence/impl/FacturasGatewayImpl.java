@@ -24,9 +24,9 @@ public class FacturasGatewayImpl extends ConexionGateway
 	 * Constructor por defecto.
 	 * 
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	public FacturasGatewayImpl() throws SQLException, BusinessException {
 		super();
@@ -63,9 +63,9 @@ public class FacturasGatewayImpl extends ConexionGateway
 	 * @param idsAveria
 	 *            Lista de aver�as.
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	private void verificarAveriasTerminadas(List<Long> idsAveria)
 			throws SQLException, BusinessException {
@@ -98,9 +98,9 @@ public class FacturasGatewayImpl extends ConexionGateway
 	 * @param status
 	 *            Estado de la aver�a.
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	private void cambiarEstadoAverias(List<Long> idsAveria, String status)
 			throws SQLException, BusinessException {
@@ -126,9 +126,9 @@ public class FacturasGatewayImpl extends ConexionGateway
 	 * @param idsAveria
 	 *            Lista de aver�as.
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	private void vincularAveriasConFactura(long idFactura, List<Long> idsAveria)
 			throws SQLException, BusinessException {
@@ -159,9 +159,9 @@ public class FacturasGatewayImpl extends ConexionGateway
 	 *            Total del importe de la factura aplicando el IVA.
 	 * @return El ID de la factura creada.
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	private long crearFactura(long numeroFactura, Date fechaFactura, double iva,
 			double totalConIva) throws SQLException, BusinessException {
@@ -189,9 +189,9 @@ public class FacturasGatewayImpl extends ConexionGateway
 	 *            N�mero de la factura.
 	 * @return El ID de una factura
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	private long getGeneratedKey(long numeroFactura)
 			throws SQLException, BusinessException {
@@ -213,9 +213,9 @@ public class FacturasGatewayImpl extends ConexionGateway
 	 * 
 	 * @return El nuevo ID de una factura
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	private Long generarNuevoNumeroFactura()
 			throws SQLException, BusinessException {
@@ -255,9 +255,9 @@ public class FacturasGatewayImpl extends ConexionGateway
 	 *            Lista de aver�as.
 	 * @return El importe total de una lista de aver�as.
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	protected double calcularImportesAverias(List<Long> idsAveria)
 			throws BusinessException, SQLException {
@@ -280,9 +280,9 @@ public class FacturasGatewayImpl extends ConexionGateway
 	 * @param totalAveria
 	 *            Total del importe de la aver�a.
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	private void actualizarImporteAveria(Long idAveria, double totalAveria)
 			throws SQLException, BusinessException {
@@ -304,9 +304,9 @@ public class FacturasGatewayImpl extends ConexionGateway
 	 *            ID de la aver�a.
 	 * @return El importe de los repuestos usados en una aver�a.
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	private double consultaImporteRepuestos(Long idAveria)
 			throws SQLException, BusinessException {
@@ -331,9 +331,9 @@ public class FacturasGatewayImpl extends ConexionGateway
 	 *            ID de la aver�a.
 	 * @return El importe mano de obra necesitada en una aver�a
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	private double consultaImporteManoObra(Long idAveria)
 			throws BusinessException, SQLException {

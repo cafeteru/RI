@@ -20,9 +20,9 @@ public class AddProveedorAction implements Command {
 	@Override
 	public void execute() throws BusinessException, SQLException {
 		String nombre = Console.readString("Nombre");
-		String codigo = Console.readString("C�digo");
+		String codigo = Console.readString("Código");
 		AdminService service = ServiceFactory.getAdminService();
 		service.newProveedor(nombre, codigo);
-		PrinterAdapter.print("Nuevo proveedor a�adido");
+		PrinterAdapter.print("Nuevo proveedor añadido");
 	}
 }

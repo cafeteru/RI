@@ -18,7 +18,7 @@ public interface FacturasGateway {
 	 * Método que se encarga de conectarse a la base de datos.
 	 * 
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 */
 	void setConnection() throws BusinessException;
 
@@ -29,9 +29,9 @@ public interface FacturasGateway {
 	 *            Una lista de aver�as de la factura.
 	 * @return Una Map con aver�as.
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	Map<String, Object> crearFactura(List<Long> idsAveria)
 			throws SQLException, BusinessException;

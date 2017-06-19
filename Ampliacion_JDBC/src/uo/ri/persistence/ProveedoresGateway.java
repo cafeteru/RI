@@ -17,7 +17,7 @@ public interface ProveedoresGateway {
 	 * Método que se encarga de conectarse a la base de datos.
 	 * 
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 */
 	void setConnection() throws BusinessException;
 
@@ -29,7 +29,7 @@ public interface ProveedoresGateway {
 	 * @param codigo
 	 *            C�digo del proveedor.
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 */
 	void añadirProveedor(String nombre, String codigo) throws BusinessException;
 
@@ -39,7 +39,7 @@ public interface ProveedoresGateway {
 	 * @param idProveedor
 	 *            ID del proveedor.
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 */
 	void borrarProveedor(Long idProveedor) throws BusinessException;
 
@@ -48,7 +48,7 @@ public interface ProveedoresGateway {
 	 * 
 	 * @return Una lista los proveedores que hay en la base de datos.
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 */
 	List<Map<String, Object>> listarProveedores() throws BusinessException;
 
@@ -62,7 +62,7 @@ public interface ProveedoresGateway {
 	 * @param codigo
 	 *            C�digo del proveedor.
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 */
 	void actualizarProveedor(Long id, String nombre, String codigo)
 			throws BusinessException;
@@ -74,7 +74,7 @@ public interface ProveedoresGateway {
 	 *            Nombre del proveedor.
 	 * @return ID del proveedor.
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 */
 	Long buscarIDProveedor(String nombre) throws BusinessException;
 }

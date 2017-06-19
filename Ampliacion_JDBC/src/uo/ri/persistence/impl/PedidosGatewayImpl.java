@@ -23,9 +23,9 @@ public class PedidosGatewayImpl extends ConexionGateway
 	 * Constructor por defecto.
 	 * 
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	public PedidosGatewayImpl() throws SQLException, BusinessException {
 		super();
@@ -52,9 +52,9 @@ public class PedidosGatewayImpl extends ConexionGateway
 	 * @param idProveedor
 	 * @param SQL
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	private void leerPedidos(Long idProveedor, String SQL)
 			throws SQLException, BusinessException {
@@ -112,9 +112,9 @@ public class PedidosGatewayImpl extends ConexionGateway
 	 * 
 	 * @param idPedido
 	 * @throws BusinessException
-	 *             Excepci�n ocurrida al realizar el programa.
+	 *             Excepción ocurrida al realizar el programa.
 	 * @throws SQLException
-	 *             Excepci�n ocurrida al realizar secuencias SQL.
+	 *             Excepción ocurrida al realizar secuencias SQL.
 	 */
 	private void verificarPedido(Long idPedido)
 			throws SQLException, BusinessException {
