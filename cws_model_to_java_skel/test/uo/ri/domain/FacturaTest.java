@@ -204,7 +204,8 @@ public class FacturaTest {
 	 */
 	private Averia crearOtraAveria() throws BusinessException {
 		sleep(100);
-		Averia averia = new Averia(vehiculo, "falla la junta la trocla otra vez");
+		Averia averia = new Averia(vehiculo,
+				"falla la junta la trocla otra vez");
 		averia.assignTo(mecanico);
 
 		Intervencion intervencion = new Intervencion(mecanico, averia);

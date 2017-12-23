@@ -86,7 +86,8 @@ public class FacturarTest {
 		facturadas.remove(averia);
 
 		assertTrue(facturadas.size() == 0);
-		assertTrue("Se debe retornar copia de la coleccion o hacerla de solo lectura",
+		assertTrue(
+				"Se debe retornar copia de la coleccion o hacerla de solo lectura",
 				factura.getAverias().size() == 1);
 	}
 

@@ -4,8 +4,8 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 /**
- * Fuerza a que se cargen los parámetros de configuraci�n, se analizen todos
- * los mapeos y, si procede, se crea la BDD
+ * Fuerza a que se cargen los parámetros de configuraci�n, se analizen todos los
+ * mapeos y, si procede, se crea la BDD
  */
 public class LoadEntityManagerFactory {
 

@@ -17,9 +17,9 @@ public class SuministrosMenu extends MenuExcepciones {
 	 *
 	 */
 	public SuministrosMenu() {
-		menuOptions = new Object[][] {
-				{ "Administrador > Gestión de repuestos suministrados por proveedor",
-						null },
+		menuOptions = new Object[][] { {
+				"Administrador > Gestión de repuestos suministrados por proveedor",
+				null },
 
 				{ "Añadir repuesto suministrado por proveedor",
 						AddSuministrosAction.class },

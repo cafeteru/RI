@@ -67,6 +67,7 @@ public class ContieneTest {
 		assertTrue(pedido.getDetallesPedidos().size() == 1);
 	}
 
+	@SuppressWarnings("unlikely-arg-type")
 	@Test
 	public void testSuministrarRemove() throws BusinessException {
 		Association.Contiene.unlink(detallesPedido);
@@ -87,7 +88,8 @@ public class ContieneTest {
 		detallesPedidos.remove(detallesPedido);
 
 		assertTrue(detallesPedidos.size() == 0);
-		assertTrue("Se debe retornar copia de la coleccion o hacerla de solo lectura",
+		assertTrue(
+				"Se debe retornar copia de la coleccion o hacerla de solo lectura",
 				pedido.getDetallesPedidos().size() == 1);
 	}
 
@@ -97,7 +99,8 @@ public class ContieneTest {
 		detallesPedidos.remove(detallesPedido);
 
 		assertTrue(detallesPedidos.size() == 0);
-		assertTrue("Se debe retornar copia de la coleccion o hacerla de solo lectura",
+		assertTrue(
+				"Se debe retornar copia de la coleccion o hacerla de solo lectura",
 				repuesto.getDetallesPedidos().size() == 1);
 	}
 

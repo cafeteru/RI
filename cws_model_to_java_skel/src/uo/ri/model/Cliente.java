@@ -76,7 +76,8 @@ public class Cliente {
 
 	@Override
 	public String toString() {
-		return "Cliente [nombre=" + nombre + ", apellidos=" + apellidos + ", dni=" + dni + ", address=" + address + "]";
+		return "Cliente [nombre=" + nombre + ", apellidos=" + apellidos
+				+ ", dni=" + dni + ", address=" + address + "]";
 	}
 
 	public Set<Vehiculo> getVehiculos() {
@@ -94,7 +95,7 @@ public class Cliente {
 	public Set<MedioPago> getMediosPago() {
 		return new HashSet<>(mediosPago);
 	}
-	
+
 	public Set<MedioPago> _getMediosPago() {
 		return mediosPago;
 	}
@@ -103,5 +104,4 @@ public class Cliente {
 		this.mediosPago = mediosPago;
 	}
 
-	
 }

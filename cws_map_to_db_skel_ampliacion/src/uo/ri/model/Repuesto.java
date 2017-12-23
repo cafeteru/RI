@@ -128,7 +128,6 @@ public class Repuesto {
 				+ min_existencias + "]";
 	}
 
-	
 	public Set<Sustitucion> getSustituciones() {
 		return new HashSet<Sustitucion>(sustituciones);
 	}

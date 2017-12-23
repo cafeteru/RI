@@ -24,7 +24,8 @@ public class Association {
 			tipoVehiculo._getVehiculos().add(vehiculo);
 		}
 
-		public static void unlink(Vehiculo vehiculo, TipoVehiculo tipoVehiculo) {
+		public static void unlink(Vehiculo vehiculo,
+				TipoVehiculo tipoVehiculo) {
 			tipoVehiculo._getVehiculos().remove(vehiculo);
 			vehiculo._setTipoVehiculo(null);
 		}
@@ -70,7 +71,8 @@ public class Association {
 	}
 
 	public static class Cargar {
-		public static void link(Factura factura, MedioPago medioPago, Cargo cargo) {
+		public static void link(Factura factura, MedioPago medioPago,
+				Cargo cargo) {
 			medioPago._getCargos().add(cargo);
 			factura._getCargos().add(cargo);
 			cargo._setFactura(factura);
@@ -99,7 +101,8 @@ public class Association {
 
 	public static class Intervenir {
 
-		public static void link(Averia averia, Intervencion intervencion, Mecanico mecanico) {
+		public static void link(Averia averia, Intervencion intervencion,
+				Mecanico mecanico) {
 			intervencion._setAveria(averia);
 			intervencion._setMecanico(mecanico);
 			averia._getIntervenciones().add(intervencion);
@@ -107,7 +110,8 @@ public class Association {
 		}
 
 		public static void unlink(Intervencion intervencion) {
-			intervencion.getMecanico()._getIntervenciones().remove(intervencion);
+			intervencion.getMecanico()._getIntervenciones()
+					.remove(intervencion);
 			intervencion.getAveria()._getIntervenciones().remove(intervencion);
 			intervencion._setAveria(null);
 			intervencion._setMecanico(null);
@@ -116,7 +120,8 @@ public class Association {
 
 	public static class Sustituir {
 
-		public static void link(Repuesto repuesto, Sustitucion sustitucion, Intervencion intervencion) {
+		public static void link(Repuesto repuesto, Sustitucion sustitucion,
+				Intervencion intervencion) {
 			sustitucion._setIntervencion(intervencion);
 			sustitucion._setRepuesto(repuesto);
 			intervencion._getSustituciones().add(sustitucion);
@@ -125,7 +130,8 @@ public class Association {
 
 		public static void unlink(Sustitucion sustitucion) {
 			sustitucion.getRepuesto()._getSustituciones().remove(sustitucion);
-			sustitucion.getIntervencion()._getSustituciones().remove(sustitucion);
+			sustitucion.getIntervencion()._getSustituciones()
+					.remove(sustitucion);
 			sustitucion._setIntervencion(null);
 			sustitucion._setRepuesto(null);
 		}

@@ -44,7 +44,8 @@ public class ServirTest {
 		pedidos.remove(pedido);
 
 		assertTrue(pedidos.size() == 0);
-		assertTrue("Se debe retornar copia de la coleccion o hacerla de solo lectura",
+		assertTrue(
+				"Se debe retornar copia de la coleccion o hacerla de solo lectura",
 				proveedor.getPedidos().size() == 1);
 	}
 

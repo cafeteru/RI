@@ -46,7 +46,8 @@ public class Intervencion {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((averia == null) ? 0 : averia.hashCode());
-		result = prime * result + ((mecanico == null) ? 0 : mecanico.hashCode());
+		result = prime * result
+				+ ((mecanico == null) ? 0 : mecanico.hashCode());
 		return result;
 	}
 
@@ -74,7 +75,8 @@ public class Intervencion {
 
 	@Override
 	public String toString() {
-		return "Intervencion [averia=" + averia + ", mecanico=" + mecanico + ", minutos=" + minutos + "]";
+		return "Intervencion [averia=" + averia + ", mecanico=" + mecanico
+				+ ", minutos=" + minutos + "]";
 	}
 
 	public Set<Sustitucion> getSustituciones() {
@@ -86,7 +88,8 @@ public class Intervencion {
 	}
 
 	public double getImporte() {
-		double precioHora = averia.getVehiculo().getTipoVehiculo().getPrecioHora();
+		double precioHora = averia.getVehiculo().getTipoVehiculo()
+				.getPrecioHora();
 		precioHora *= (double) getMinutos() / 60;
 		double precioSustituciones = 0;
 		for (Sustitucion sustitucion : getSustituciones())

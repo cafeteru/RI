@@ -69,7 +69,8 @@ public class Mecanico {
 
 	@Override
 	public String toString() {
-		return "Mecanico [dni=" + dni + ", apellidos=" + apellidos + ", nombre=" + nombre + "]";
+		return "Mecanico [dni=" + dni + ", apellidos=" + apellidos + ", nombre="
+				+ nombre + "]";
 	}
 
 	public Set<Intervencion> getIntervenciones() {

@@ -78,7 +78,8 @@ public class SustituirTest {
 		sustituciones.remove(sustitucion);
 
 		assertTrue(sustituciones.size() == 0);
-		assertTrue("Se debe retornar copia de la coleccion o hacerla de solo lectura",
+		assertTrue(
+				"Se debe retornar copia de la coleccion o hacerla de solo lectura",
 				intervencion.getSustituciones().size() == 1);
 	}
 
@@ -88,7 +89,8 @@ public class SustituirTest {
 		sustituciones.remove(sustitucion);
 
 		assertTrue(sustituciones.size() == 0);
-		assertTrue("Se debe retornar copia de la coleccion o hacerla de solo lectura",
+		assertTrue(
+				"Se debe retornar copia de la coleccion o hacerla de solo lectura",
 				repuesto.getSustituciones().size() == 1);
 	}
 

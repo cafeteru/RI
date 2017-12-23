@@ -9,7 +9,8 @@ public class Cargo {
 	private MedioPago medioPago;
 	private double importe = 0.0;
 
-	public Cargo(Factura factura, MedioPago medioPago, double importe) throws BusinessException {
+	public Cargo(Factura factura, MedioPago medioPago, double importe)
+			throws BusinessException {
 		// incrementar el importe en el acumulado del medio de pago
 		// guardar el importe
 		// enlazar (link) factura, este cargo y medioDePago

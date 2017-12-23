@@ -61,7 +61,8 @@ public class Vehiculo {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((matricula == null) ? 0 : matricula.hashCode());
+		result = prime * result
+				+ ((matricula == null) ? 0 : matricula.hashCode());
 		return result;
 	}
 
@@ -84,8 +85,8 @@ public class Vehiculo {
 
 	@Override
 	public String toString() {
-		return "Vehiculo [marca=" + marca + ", matricula=" + matricula + ", modelo=" + modelo + ", numAverias="
-				+ numAverias + "]";
+		return "Vehiculo [marca=" + marca + ", matricula=" + matricula
+				+ ", modelo=" + modelo + ", numAverias=" + numAverias + "]";
 	}
 
 	public Cliente getCliente() {

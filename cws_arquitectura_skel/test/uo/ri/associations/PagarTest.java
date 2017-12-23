@@ -91,7 +91,7 @@ public class PagarTest {
 	@Test
 	public void testCargarRemove() throws BusinessException {
 		cargo.rewind();
-		
+
 		assertTrue(!metalico.getCargos().contains(cargo));
 		assertTrue(metalico.getCargos().size() == 0);
 

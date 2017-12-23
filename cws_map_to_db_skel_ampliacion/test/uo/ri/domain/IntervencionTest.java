@@ -15,9 +15,8 @@ import uo.ri.model.Sustitucion;
 import uo.ri.model.TipoVehiculo;
 import uo.ri.model.Vehiculo;
 
-
 public class IntervencionTest {
-	
+
 	private Mecanico mecanico;
 	private Averia averia;
 	private Intervencion intervencion;
@@ -38,18 +37,18 @@ public class IntervencionTest {
 
 		averia = new Averia(vehiculo, "falla la junta la trocla");
 		mecanico = new Mecanico("dni-mecanico", "nombre", "apellidos");
-	
+
 		intervencion = new Intervencion(mecanico, averia);
 		intervencion.setMinutos(60);
-		
+
 		repuesto = new Repuesto("R1001", "junta la trocla", 100.0);
 		sustitucion = new Sustitucion(repuesto, intervencion);
 		sustitucion.setCantidad(2);
 	}
-	
+
 	@Test
 	public void testImporteIntervencion() {
-		assertTrue( intervencion.getImporte() == 250.0 );
+		assertTrue(intervencion.getImporte() == 250.0);
 	}
 
 }

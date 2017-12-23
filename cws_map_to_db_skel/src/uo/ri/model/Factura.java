@@ -21,7 +21,7 @@ public class Factura {
 	private Long id;
 
 	private Long numero;
-	
+
 	@Temporal(TemporalType.DATE)
 	private Date fecha;
 
@@ -151,8 +151,8 @@ public class Factura {
 			averia.setStatus(AveriaStatus.FACTURADA);
 			Association.Facturar.link(this, averia);
 		} else {
-			throw new BusinessException("No se puede añadir la avería a"
-					+ " la factura, no está terminada");
+			throw new BusinessException("No se puede aï¿½adir la averï¿½a a"
+					+ " la factura, no estï¿½ terminada");
 		}
 	}
 

@@ -69,6 +69,7 @@ public class TarjetaCredito extends MedioPago {
 
 	@Override
 	public String toString() {
-		return "TarjetaCredito [numero=" + numero + ", tipo=" + tipo + ", validez=" + validez + "]";
+		return "TarjetaCredito [numero=" + numero + ", tipo=" + tipo
+				+ ", validez=" + validez + "]";
 	}
 }

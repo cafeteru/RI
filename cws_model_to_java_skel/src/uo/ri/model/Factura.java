@@ -37,15 +37,18 @@ public class Factura {
 		inicializarFactura(averias);
 	}
 
-	public Factura(long numero, Date fecha, List<Averia> averias) throws BusinessException {
+	public Factura(long numero, Date fecha, List<Averia> averias)
+			throws BusinessException {
 		this(numero, fecha);
 		inicializarFactura(averias);
 	}
 
-	private void inicializarFactura(List<Averia> averias) throws BusinessException {
+	private void inicializarFactura(List<Averia> averias)
+			throws BusinessException {
 		for (Averia averia : averias) {
 			if (!averia.getStatus().equals(AveriaStatus.TERMINADA))
-				throw new BusinessException("La avería " + averia.getDescripcion() + " no esta terminada.");
+				throw new BusinessException("La avería "
+						+ averia.getDescripcion() + " no esta terminada.");
 			else
 				averia.setStatus(AveriaStatus.FACTURADA);
 		}
@@ -116,8 +119,8 @@ public class Factura {
 
 	@Override
 	public String toString() {
-		return "Factura [numero=" + numero + ", fecha=" + fecha + ", importe=" + importe + ", iva=" + iva + ", status="
-				+ status + "]";
+		return "Factura [numero=" + numero + ", fecha=" + fecha + ", importe="
+				+ importe + ", iva=" + iva + ", status=" + status + "]";
 	}
 
 	/**
@@ -147,7 +150,8 @@ public class Factura {
 	void calcularImporte() {
 		// iva = ...
 		// importe = ...
-		double iva = DateUtil.fromString("1/7/2012").before(fecha) ? 21.0 : 18.0;
+		double iva = DateUtil.fromString("1/7/2012").before(fecha) ? 21.0
+				: 18.0;
 		double importe = 0;
 		for (Averia averia : averias)
 			importe += averia.getImporte();

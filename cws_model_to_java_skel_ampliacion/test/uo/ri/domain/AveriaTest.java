@@ -67,7 +67,8 @@ public class AveriaTest {
 	 * Calculo del importe de averia con intervenciones de varios mecanicos
 	 */
 	@Test
-	public void testImporteAveriaConDosIntervenciones() throws BusinessException {
+	public void testImporteAveriaConDosIntervenciones()
+			throws BusinessException {
 		averia.reopen();
 		Mecanico otro = new Mecanico("1", "a", "n");
 		averia.assignTo(otro);
@@ -86,7 +87,8 @@ public class AveriaTest {
 	 * @throws BusinessException
 	 */
 	@Test
-	public void testImporteAveriaQuitandoIntervencione() throws BusinessException {
+	public void testImporteAveriaQuitandoIntervencione()
+			throws BusinessException {
 		averia.reopen();
 		Mecanico otro = new Mecanico("1", "a", "n");
 		averia.assignTo(otro);

@@ -55,10 +55,10 @@ public class FacturasGatewayImpl implements FacturasGateway {
 				TratamientoExcepciones.setLong(pst, 1, idAveria);
 				rs = TratamientoExcepciones.executeQuery(pst);
 				if (rs.next() == false)
-					throw new BusinessException("No existe la averia " + idAveria);
+					throw new BusinessException("No existe la averÃ­a " + idAveria);
 				String status = rs.getString(1);
 				if (!"TERMINADA".equalsIgnoreCase(status))
-					throw new BusinessException("No está terminada la avería " + idAveria);
+					throw new BusinessException("No estï¿½ terminada la averÃ­a " + idAveria);
 			}
 			c.commit();
 		} finally {

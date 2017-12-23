@@ -64,8 +64,10 @@ public class Averia {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((descripcion == null) ? 0 : descripcion.hashCode());
-		result = prime * result + ((vehiculo == null) ? 0 : vehiculo.hashCode());
+		result = prime * result
+				+ ((descripcion == null) ? 0 : descripcion.hashCode());
+		result = prime * result
+				+ ((vehiculo == null) ? 0 : vehiculo.hashCode());
 		return result;
 	}
 
@@ -93,8 +95,9 @@ public class Averia {
 
 	@Override
 	public String toString() {
-		return "Averia [descripcion=" + descripcion + ", fecha=" + fecha + ", importe=" + importe + ", status=" + status
-				+ ", vehiculo=" + vehiculo + "]";
+		return "Averia [descripcion=" + descripcion + ", fecha=" + fecha
+				+ ", importe=" + importe + ", status=" + status + ", vehiculo="
+				+ vehiculo + "]";
 	}
 
 	/**

@@ -7,7 +7,7 @@ public class TipoVehiculo {
 
 	private String nombre;
 	private double precioHora;
-	
+
 	private Set<Vehiculo> vehiculos = new HashSet<>();
 
 	public TipoVehiculo(String nombre) {
@@ -58,7 +58,8 @@ public class TipoVehiculo {
 
 	@Override
 	public String toString() {
-		return "TipoVehiculo [nombre=" + nombre + ", precioHora=" + precioHora + "]";
+		return "TipoVehiculo [nombre=" + nombre + ", precioHora=" + precioHora
+				+ "]";
 	}
 
 	public Set<Vehiculo> getVehiculos() {

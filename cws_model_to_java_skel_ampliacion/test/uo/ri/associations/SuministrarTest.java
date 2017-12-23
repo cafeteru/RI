@@ -62,7 +62,7 @@ public class SuministrarTest {
 
 		assertTrue(repuesto.getSuministros().contains(suministro));
 		assertTrue(repuesto.getSuministros().size() == 1);
-		
+
 		assertTrue(proveedor.getSuministros().contains(suministro));
 		assertTrue(proveedor.getSuministros().size() == 1);
 	}
@@ -87,7 +87,8 @@ public class SuministrarTest {
 		suministros.remove(suministro);
 
 		assertTrue(suministros.size() == 0);
-		assertTrue("Se debe retornar copia de la coleccion o hacerla de solo lectura",
+		assertTrue(
+				"Se debe retornar copia de la coleccion o hacerla de solo lectura",
 				proveedor.getSuministros().size() == 1);
 	}
 
@@ -97,7 +98,8 @@ public class SuministrarTest {
 		suministros.remove(suministro);
 
 		assertTrue(suministros.size() == 0);
-		assertTrue("Se debe retornar copia de la coleccion o hacerla de solo lectura",
+		assertTrue(
+				"Se debe retornar copia de la coleccion o hacerla de solo lectura",
 				repuesto.getSuministros().size() == 1);
 	}
 
