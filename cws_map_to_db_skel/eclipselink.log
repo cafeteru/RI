@@ -1,65 +1,17 @@
-[EL Info]: 2016-12-16 13:41:43.627--ServerSession(250448141)--EclipseLink, version: Eclipse Persistence Services - 2.6.4.v20160829-44060b6
-[EL Info]: connection: 2016-12-16 13:41:43.837--ServerSession(250448141)--/file:/C:/Users/igm1990/Documents/MEGA/RI/Practica de referencia/cws_map_to_db_skel/target/classes/_carworkshop login successful
-[EL Fine]: sql: 2016-12-16 13:41:43.843--ClientSession(1415638483)--Connection(1572582034)--INSERT INTO TFACTURAS (FECHA, IMPORTE, IVA, NUMERO, STATUS) VALUES (?, ?, ?, ?, ?)
+[EL Info]: 2017-12-26 02:45:07.809--ServerSession(1309934743)--EclipseLink, version: Eclipse Persistence Services - 2.6.4.v20160829-44060b6
+[EL Info]: connection: 2017-12-26 02:45:08.04--ServerSession(1309934743)--/file:/C:/Users/igm1990/Desktop/RI/cws_map_to_db_skel/target/classes/_carworkshop login successful
+[EL Fine]: sql: 2017-12-26 02:45:08.066--ClientSession(59103257)--Connection(1125499532)--INSERT INTO TFACTURAS (FECHA, IMPORTE, IVA, NUMERO, STATUS) VALUES (?, ?, ?, ?, ?)
 	bind => [5 parameters bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.844--ClientSession(1415638483)--Connection(1572582034)--CALL IDENTITY()
-[EL Fine]: sql: 2016-12-16 13:41:43.846--ClientSession(1415638483)--Connection(1572582034)--INSERT INTO TMECANICOS (APELLIDOS, DNI, NOMBRE) VALUES (?, ?, ?)
+[EL Fine]: sql: 2017-12-26 02:45:08.069--ClientSession(59103257)--Connection(1125499532)--CALL IDENTITY()
+[EL Fine]: sql: 2017-12-26 02:45:08.072--ClientSession(59103257)--Connection(1125499532)--INSERT INTO TMECANICOS (APELLIDOS, DNI, NOMBRE) VALUES (?, ?, ?)
 	bind => [3 parameters bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.846--ClientSession(1415638483)--Connection(1572582034)--CALL IDENTITY()
-[EL Fine]: sql: 2016-12-16 13:41:43.848--ClientSession(1415638483)--Connection(1572582034)--INSERT INTO TCLIENTES (APELLIDOS, DNI, NOMBRE, CITY, STREET, ZIPCODE) VALUES (?, ?, ?, ?, ?, ?)
-	bind => [6 parameters bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.848--ClientSession(1415638483)--Connection(1572582034)--CALL IDENTITY()
-[EL Fine]: sql: 2016-12-16 13:41:43.849--ClientSession(1415638483)--Connection(1572582034)--INSERT INTO TTIPOSVEHICULO (NOMBRE, PRECIOHORA) VALUES (?, ?)
-	bind => [2 parameters bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.85--ClientSession(1415638483)--Connection(1572582034)--CALL IDENTITY()
-[EL Fine]: sql: 2016-12-16 13:41:43.851--ClientSession(1415638483)--Connection(1572582034)--INSERT INTO TVEHICULOS (MARCA, MATRICULA, MODELO, NUM_AVERIAS, CLIENTE_ID, TIPO_ID) VALUES (?, ?, ?, ?, ?, ?)
-	bind => [6 parameters bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.852--ClientSession(1415638483)--Connection(1572582034)--CALL IDENTITY()
-[EL Fine]: sql: 2016-12-16 13:41:43.853--ClientSession(1415638483)--Connection(1572582034)--INSERT INTO TAVERIAS (DESCRIPCION, FECHA, IMPORTE, STATUS, FACTURA_ID, MECANICO_ID, VEHICULO_ID) VALUES (?, ?, ?, ?, ?, ?, ?)
-	bind => [7 parameters bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.854--ClientSession(1415638483)--Connection(1572582034)--CALL IDENTITY()
-[EL Fine]: sql: 2016-12-16 13:41:43.855--ClientSession(1415638483)--Connection(1572582034)--INSERT INTO TMEDIOSPAGO (ACUMULADO, CODIGO, DISPONIBLE, CLIENTE_ID, DTYPE) VALUES (?, ?, ?, ?, ?)
-	bind => [5 parameters bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.856--ClientSession(1415638483)--Connection(1572582034)--CALL IDENTITY()
-[EL Fine]: sql: 2016-12-16 13:41:43.857--ClientSession(1415638483)--Connection(1572582034)--INSERT INTO TMEDIOSPAGO (ACUMULADO, CLIENTE_ID, DTYPE) VALUES (?, ?, ?)
+[EL Fine]: sql: 2017-12-26 02:45:08.075--ClientSession(59103257)--CALL 1
+[EL Warning]: 2017-12-26 02:45:08.077--UnitOfWork(150835665)--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.6.4.v20160829-44060b6): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: usuario no tiene privilegios suficientes o objeto no encontrado: DNI
+Error Code: -5501
+Call: INSERT INTO TMECANICOS (APELLIDOS, DNI, NOMBRE) VALUES (?, ?, ?)
 	bind => [3 parameters bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.857--ClientSession(1415638483)--Connection(1572582034)--CALL IDENTITY()
-[EL Fine]: sql: 2016-12-16 13:41:43.858--ClientSession(1415638483)--Connection(1572582034)--INSERT INTO TMEDIOSPAGO (ACUMULADO, NUMERO, TIPO, VALIDEZ, CLIENTE_ID, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
-	bind => [6 parameters bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.859--ClientSession(1415638483)--Connection(1572582034)--CALL IDENTITY()
-[EL Fine]: sql: 2016-12-16 13:41:43.86--ClientSession(1415638483)--Connection(1572582034)--INSERT INTO TCARGOS (IMPORTE, FACTURA_ID, MEDIOPAGO_ID) VALUES (?, ?, ?)
-	bind => [3 parameters bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.861--ClientSession(1415638483)--Connection(1572582034)--INSERT INTO TINTERVENCIONES (MINUTOS, AVERIA_ID, MECANICO_ID) VALUES (?, ?, ?)
-	bind => [3 parameters bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.862--ClientSession(1415638483)--Connection(1572582034)--INSERT INTO TREPUESTOS (CODIGO, DESCRIPCION, PRECIO) VALUES (?, ?, ?)
-	bind => [3 parameters bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.863--ClientSession(1415638483)--Connection(1572582034)--CALL IDENTITY()
-[EL Fine]: sql: 2016-12-16 13:41:43.864--ClientSession(1415638483)--Connection(1572582034)--INSERT INTO TSUSTITUCIONES (CANTIDAD, INTERVENCION_AVERIA_ID, INTERVENCION_MECANICO_ID, REPUESTO_ID) VALUES (?, ?, ?, ?)
-	bind => [4 parameters bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.871--ClientSession(1354183876)--Connection(1572582034)--DELETE FROM TSUSTITUCIONES WHERE (((REPUESTO_ID = ?) AND (INTERVENCION_AVERIA_ID = ?)) AND (INTERVENCION_MECANICO_ID = ?))
-	bind => [3 parameters bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.872--ClientSession(1354183876)--Connection(1572582034)--DELETE FROM TREPUESTOS WHERE (ID = ?)
+Query: InsertObjectQuery(Mecanico [dni=dni-mecanico, apellidos=apellidos, nombre=nombre, averias=[]])
+[EL Fine]: sql: 2017-12-26 02:45:08.082--ServerSession(1309934743)--Connection(1125499532)--SELECT ID, FECHA, IMPORTE, IVA, NUMERO, STATUS FROM TFACTURAS WHERE (ID = ?)
 	bind => [1 parameter bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.873--ClientSession(1354183876)--Connection(1572582034)--DELETE FROM TINTERVENCIONES WHERE ((MECANICO_ID = ?) AND (AVERIA_ID = ?))
-	bind => [2 parameters bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.874--ClientSession(1354183876)--Connection(1572582034)--DELETE FROM TCARGOS WHERE ((FACTURA_ID = ?) AND (MEDIOPAGO_ID = ?))
-	bind => [2 parameters bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.875--ClientSession(1354183876)--Connection(1572582034)--DELETE FROM TMEDIOSPAGO WHERE (ID = ?)
-	bind => [1 parameter bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.876--ClientSession(1354183876)--Connection(1572582034)--DELETE FROM TMEDIOSPAGO WHERE (ID = ?)
-	bind => [1 parameter bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.877--ClientSession(1354183876)--Connection(1572582034)--DELETE FROM TMEDIOSPAGO WHERE (ID = ?)
-	bind => [1 parameter bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.878--ClientSession(1354183876)--Connection(1572582034)--DELETE FROM TAVERIAS WHERE (ID = ?)
-	bind => [1 parameter bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.878--ClientSession(1354183876)--Connection(1572582034)--DELETE FROM TVEHICULOS WHERE (ID = ?)
-	bind => [1 parameter bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.879--ClientSession(1354183876)--Connection(1572582034)--DELETE FROM TTIPOSVEHICULO WHERE (ID = ?)
-	bind => [1 parameter bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.88--ClientSession(1354183876)--Connection(1572582034)--DELETE FROM TCLIENTES WHERE (ID = ?)
-	bind => [1 parameter bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.881--ClientSession(1354183876)--Connection(1572582034)--DELETE FROM TMECANICOS WHERE (ID = ?)
-	bind => [1 parameter bound]
-[EL Fine]: sql: 2016-12-16 13:41:43.883--ClientSession(1354183876)--Connection(1572582034)--DELETE FROM TFACTURAS WHERE (ID = ?)
-	bind => [1 parameter bound]
-[EL Info]: connection: 2016-12-16 13:41:43.884--ServerSession(250448141)--/file:/C:/Users/igm1990/Documents/MEGA/RI/Practica de referencia/cws_map_to_db_skel/target/classes/_carworkshop logout successful
+[EL Info]: connection: 2017-12-26 02:45:08.098--ServerSession(1309934743)--/file:/C:/Users/igm1990/Desktop/RI/cws_map_to_db_skel/target/classes/_carworkshop logout successful
