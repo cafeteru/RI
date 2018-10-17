@@ -67,6 +67,7 @@ public class ContieneTest {
 		assertTrue(pedido.getDetallesPedidos().size() == 1);
 	}
 
+	@SuppressWarnings("unlikely-arg-type")
 	@Test
 	public void testSuministrarRemove() throws BusinessException {
 		Association.Contiene.unlink(detallesPedido);
